@@ -36,11 +36,20 @@ if (isMobile.any()) {
 // menu burger
 const iconMenu = document.querySelector(".menu__icon");
 const menuBody = document.querySelector(".menu__body");
+const mobileBtn = document.querySelector(".mobile__burger-btn");
 if (iconMenu) {
   iconMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle("_lock");
-    iconMenu.classList.toggle("_active");
-    menuBody.classList.toggle("_active");
+    document.body.classList.add("_lock");
+    iconMenu.classList.add("_active");
+    menuBody.classList.add("_active");
+  });
+}
+
+if (mobileBtn) {
+  mobileBtn.addEventListener("click", function (e) {
+    document.body.classList.remove("_lock");
+    iconMenu.classList.remove("_active");
+    menuBody.classList.remove("_active");
   });
 }
 
