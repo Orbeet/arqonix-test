@@ -668,8 +668,8 @@ body._lock {
   /* position: absolute; */
   top: 13px;
   right: 10px;
-  /* display: inline-block; */
   display: none;
+  /* display: inline-block; */
   vertical-align: middle;
   width: 30px;
   height: 30px;
