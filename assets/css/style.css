@@ -647,22 +647,36 @@ body._lock {
   position: relative;
   display: block;
   padding: 13px 60px 15px 13px;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
   color: #202020;
+  color: white;
   font-size: 28px;
   text-decoration: none;
   background-color: #eaeaea;
-  border-radius: 3px;
+  /* border-radius: 16px; */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
   cursor: pointer;
 }
 .accordion__item .accordion__title:hover {
-  background-color: #e5e4e4;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.0512) 100%
+  );
+  backdrop-filter: blur(64px);
   transition: all 0.5s ease-out;
 }
 .accordion__item .accordion-active {
   background-color: #e5e4e4;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+}
+.accordion-active {
 }
 .accordion__item .accordion__title .accordion__arrow {
   /* position: absolute; */
@@ -698,6 +712,81 @@ body._lock {
   font-weight: 700;
 }
 /*-------------------End FAQ ------------------*/
+
+/*------------------- FAQ test ------------------*/
+/** Ignore start */
+/* body {
+  font-family: "Poppins", arial, sans-serif;
+  color: #555;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+} */
+
+.faq__container {
+  /* max-width: 700px; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 30px; */
+}
+/** Ignore end */
+/** Accordion item style */
+.accordion-item {
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.0512) 100%
+  );
+  backdrop-filter: blur(64px);
+  padding: 20px 20px;
+  box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+.accordion-item > .title {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* justify-content: space-between; */
+  align-items: center;
+  line-height: 1;
+  cursor: pointer;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.accordion-item > .title > .arrow {
+  fill: #b721ff;
+  margin-right: 12px;
+}
+.accordion-item > .content {
+  display: none;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.accordion-item > .content > .entry {
+  line-height: 1.74;
+}
+.accordion-item > .content > .entry p:last-of-type,
+.accordion-item > .content > .entry p:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------End FAQ Test ------------------*/
 
 /* ===================== Footer =================== */
 .footer img {
