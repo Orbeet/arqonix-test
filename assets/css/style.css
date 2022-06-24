@@ -82,7 +82,7 @@ h1 {
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: rgba(174, 60, 60, 0.318);
+  /* background-color: rgba(174, 60, 60, 0.318); */
 }
 
 /* ================== Header =================== */
@@ -353,7 +353,7 @@ body._lock {
   .mobile__menu-logo {
     display: flex;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     justify-content: center;
   }
   .mobile__menu-logo-one {
@@ -428,14 +428,14 @@ body._lock {
 
   .menu__body {
     position: fixed;
-    top: 0;
-    /* top: -15px; */
+    /* top: 0; */
+    top: -10px;
     margin-right: -14px;
     right: -100%;
     max-width: 320px;
     width: 100%;
     /* min-height: 667px; */
-    min-height: 590px;
+    min-height: 580px;
     height: 100%;
     /* transform: translate(100%, 0px); */
     background: linear-gradient(112.29deg, #17234e 0%, #24063c 100%), #100821;
@@ -474,7 +474,7 @@ body._lock {
   .menu__contacts {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 80px;
+    margin-top: 72px;
     align-content: flex-end;
     /* background-color: gray; */
     align-items: flex-end;
@@ -542,7 +542,7 @@ body._lock {
   display: flex;
   position: absolute;
   z-index: 3;
-  bottom: 11%;
+  bottom: 13%;
   left: 50%;
   transform: translate(-50%, 0);
   flex-direction: column;
@@ -593,13 +593,14 @@ body._lock {
 /* ------------------------ Sections ------------------------- */
 .section {
   padding-top: 190px;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 .collection__section {
   padding-top: 100px;
 }
 .bg {
   background-color: #190a32;
+  /* background-color: red; */
 }
 .section__title {
   font-family: -apple-system, BlinkMacSystemFont, "Russo One", sans-serif;
@@ -780,7 +781,7 @@ body._lock {
   display: flex;
   margin: 0;
   padding: 0;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   line-height: 1;
   cursor: pointer;
@@ -818,24 +819,25 @@ ul.accordion-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 22px; */
+  gap: 22px;
   position: relative;
-  /* display: block; */
   width: 100%;
   height: auto;
   /* padding: 20px; */
   /* margin: 0; */
   list-style: none;
   /* background-color: #f9f9fa; */
+  /* transition: all 0.3s ease-in-out; */
 }
 ul.accordion-list li {
   position: relative;
+  /* display: flex; */
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   /* padding: 32px; */
-  padding: 3%;
+  padding: 30px;
   /* margin: 0 auto 15px auto; */
   /* border: 1px solid #eee; */
   background: linear-gradient(
@@ -846,9 +848,24 @@ ul.accordion-list li {
   backdrop-filter: blur(64px);
   border-radius: 16px;
   cursor: pointer;
+  /* transition: all 0.3s ease-in-out; */
 }
 ul.accordion-list li:last-child {
-  margin-bottom: 0%;
+  /* margin-bottom: 0%; */
+}
+/* ul.accordion-list li:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0.1536) 100%
+  );
+} */
+ul.accordion-list li.active {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0.1536) 100%
+  );
 }
 ul.accordion-list li.active h3:before {
   transform: rotate(0deg);
