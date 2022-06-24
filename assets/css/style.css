@@ -78,11 +78,11 @@ h1 {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1488px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  /* background-color: rgba(174, 60, 60, 0.318); */
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: rgba(174, 60, 60, 0.318);
 }
 
 /* ================== Header =================== */
@@ -354,6 +354,11 @@ body._lock {
     display: flex;
     align-items: center;
     margin-bottom: 26px;
+    justify-content: center;
+  }
+  .mobile__menu-logo-one {
+    width: 80px;
+    margin-right: 5px;
   }
 
   .mobile__burger-btn {
@@ -423,14 +428,14 @@ body._lock {
 
   .menu__body {
     position: fixed;
-    /* top: 0; */
-    top: -17px;
+    top: 0;
+    /* top: -15px; */
     margin-right: -14px;
     right: -100%;
     max-width: 320px;
     width: 100%;
     /* min-height: 667px; */
-    min-height: 615px;
+    min-height: 590px;
     height: 100%;
     /* transform: translate(100%, 0px); */
     background: linear-gradient(112.29deg, #17234e 0%, #24063c 100%), #100821;
@@ -537,7 +542,7 @@ body._lock {
   display: flex;
   position: absolute;
   z-index: 3;
-  bottom: 18%;
+  bottom: 11%;
   left: 50%;
   transform: translate(-50%, 0);
   flex-direction: column;
@@ -810,12 +815,16 @@ body._lock {
 
 /*------------------- FAQ LAST ------------------*/
 ul.accordion-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 22px; */
   position: relative;
-  display: block;
+  /* display: block; */
   width: 100%;
   height: auto;
-  padding: 20px;
-  margin: 0;
+  /* padding: 20px; */
+  /* margin: 0; */
   list-style: none;
   /* background-color: #f9f9fa; */
 }
@@ -824,8 +833,10 @@ ul.accordion-list li {
   display: block;
   width: 100%;
   height: auto;
-  padding: 20px;
-  margin: 0 auto 15px auto;
+  margin-bottom: 2%;
+  /* padding: 32px; */
+  padding: 3%;
+  /* margin: 0 auto 15px auto; */
   /* border: 1px solid #eee; */
   background: linear-gradient(
     180deg,
@@ -835,6 +846,9 @@ ul.accordion-list li {
   backdrop-filter: blur(64px);
   border-radius: 16px;
   cursor: pointer;
+}
+ul.accordion-list li:last-child {
+  margin-bottom: 0%;
 }
 ul.accordion-list li.active h3:before {
   transform: rotate(0deg);
@@ -891,12 +905,16 @@ ul.accordion-list li div.answer {
 ul.accordion-list li div.answer p {
   position: relative;
   display: block;
-  font-weight: 300;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
   cursor: pointer;
-  line-height: 150%;
-  margin: 0 0 15px 0;
-  font-size: 14px;
+  /* margin: 0 0 15px 0; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+  color: #ffffff;
 }
 
 /*-------------------End FAQ LAST ------------------*/
