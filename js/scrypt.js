@@ -114,6 +114,20 @@ if (menuLinks.length > 0) {
     }
   }
 }
+// -------------------------------------------------------
+
+// --------------- Partners Slider ----------------
+$(document).ready(function () {
+  $(".partners__slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    // waitForAnimate: false,
+    centerMode: true,
+    variableWidth: true,
+  });
+});
+
+// --------------- /End Partners Slider ----------------
 
 // $(document).ready(function () {
 //   $(function () {

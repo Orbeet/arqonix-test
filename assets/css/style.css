@@ -688,6 +688,139 @@ body._lock {
   }
 }
 
+/* ================= Partners Slider =============== */
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+/* Castou Partners slider -------------------------------*/
+.partners__slider {
+  position: relative;
+}
+.partners__slider .slick-arrow {
+  /* box-sizing: content-box; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  font-size: 0;
+  /* width: 11px; */
+  /* height: 17px; */
+  /* background-color: gold; */
+  /* padding: 11.5px 14.6px; */
+}
+.partners__slider .slick-arrow.slick-prev {
+  width: 11px;
+  height: 17px;
+
+  /* box-sizing: content-box; */
+  left: 5px;
+  background: url("../images/arrow-prev.svg") center center no-repeat;
+  /* background-size: contain; */
+  background-color: #6a30e3;
+  /* padding: 11.5px 14.6px; */
+  padding: 23px;
+  border-radius: 100%;
+}
+.partners__slider .slick-arrow.slick-next {
+  width: 11px;
+  height: 17px;
+  right: 5px;
+  /* background: url("../images/arrow-next.svg") 0 0 / 100% no-repeat; */
+  background: url("../images/arrow-next.svg") center center no-repeat;
+  background-color: #6a30e3;
+  padding: 20px;
+  border-radius: 100%;
+}
+.slider__item {
+  transition: all 0.3s ease 0s;
+  /* display: block; */
+  /* width: 262px; */
+  /* height: 184px; */
+  border-radius: 16px;
+  background-color: yellowgreen;
+  text-align: center;
+  /* overflow: hidden; */
+  opacity: 0.4;
+  margin-right: 12px;
+}
+.slider__item.slick-center {
+  opacity: 1;
+}
+.slider__item img {
+  /* display: block; */
+  /* margin: 0 auto; */
+  width: 224px;
+  height: 157px;
+  border-radius: 16px;
+}
+/* ================= /End Partners Slider =============== */
+.partners__slider {
+  display: none;
+}
+.partners {
+  display: block;
+}
+@media (max-width: 967px) {
+  .partners__slider {
+    display: block;
+  }
+  .partners {
+    display: none;
+  }
+}
 /* ==================== /End Partners ======================= */
 
 /* ==================== TEAM ======================= */
