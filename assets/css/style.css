@@ -746,8 +746,12 @@ body._lock {
 }
 
 /* Castou Partners slider -------------------------------*/
+.partners__section {
+  min-width: 0;
+}
 .partners__slider {
   position: relative;
+  min-width: 0;
 }
 .partners__slider .slick-arrow {
   /* box-sizing: content-box; */
