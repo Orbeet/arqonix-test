@@ -700,8 +700,6 @@ body._lock {
 }
 /* Ограничивающая оболочка */
 .slick-list {
-  margin: 0;
-  min-width: 0;
   overflow: hidden;
 }
 /* Лента слайдов */
@@ -748,12 +746,10 @@ body._lock {
 }
 
 /* Castou Partners slider -------------------------------*/
-.partners__section {
-  min-width: 0;
-}
 .partners__slider {
   position: relative;
   min-width: 0;
+  margin: 0 -12px;
 }
 .partners__slider .slick-arrow {
   /* box-sizing: content-box; */
@@ -770,7 +766,6 @@ body._lock {
 .partners__slider .slick-arrow.slick-prev {
   width: 11px;
   height: 17px;
-
   /* box-sizing: content-box; */
   left: 5px;
   background: url("../images/arrow-prev.svg") center center no-repeat;
@@ -800,12 +795,12 @@ body._lock {
   text-align: center;
   /* overflow: hidden; */
   opacity: 0.4;
-  margin: 0;
   min-width: 0;
-  margin-right: 12px;
+  margin: 0 12px;
 }
 .slider__item.slick-center {
   opacity: 1;
+  min-width: 0;
 }
 .slider__item img {
   /* display: block; */
