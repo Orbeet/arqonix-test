@@ -748,7 +748,7 @@ body._lock {
 /* Castou Partners slider -------------------------------*/
 .partners__slider {
   position: relative;
-  min-width: 0;
+  /* min-width: 0; */
   margin: 0 -12px;
 }
 .partners__slider .slick-arrow {
@@ -767,22 +767,22 @@ body._lock {
   width: 11px;
   height: 17px;
   /* box-sizing: content-box; */
-  left: 5px;
+  left: 20px;
   background: url("../images/arrow-prev.svg") center center no-repeat;
   /* background-size: contain; */
   background-color: #6a30e3;
   /* padding: 11.5px 14.6px; */
-  padding: 23px;
+  padding: 22px;
   border-radius: 100%;
 }
 .partners__slider .slick-arrow.slick-next {
   width: 11px;
   height: 17px;
-  right: 5px;
+  right: 20px;
   /* background: url("../images/arrow-next.svg") 0 0 / 100% no-repeat; */
   background: url("../images/arrow-next.svg") center center no-repeat;
   background-color: #6a30e3;
-  padding: 20px;
+  padding: 22px;
   border-radius: 100%;
 }
 .slider__item {
@@ -810,17 +810,17 @@ body._lock {
   border-radius: 16px;
 }
 /* ================= /End Partners Slider =============== */
-.partners__slider {
+.partners__block-slider {
   display: none;
 }
-.partners {
+.partners__block {
   display: block;
 }
 @media (max-width: 967px) {
-  .partners__slider {
+  .partners__block-slider {
     display: block;
   }
-  .partners {
+  .partners__block {
     display: none;
   }
 }
