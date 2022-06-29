@@ -800,6 +800,8 @@ body._lock {
   text-align: center;
   /* overflow: hidden; */
   opacity: 0.4;
+  margin: 0;
+  min-width: 0;
   margin-right: 12px;
 }
 .slider__item.slick-center {
