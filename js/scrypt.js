@@ -116,7 +116,7 @@ if (menuLinks.length > 0) {
 }
 // -------------------------------------------------------
 
-// --------------- Partners Slider ----------------
+// --------------- Partners and Team Sliders ----------------
 $(document).ready(function () {
   $(".partners__slider").slick({
     adaptiveHeight: true,
@@ -124,6 +124,16 @@ $(document).ready(function () {
     // waitForAnimate: false,
     centerMode: true,
     variableWidth: true,
+  });
+
+  // ---------- Team slider -----------
+  $(".team__slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    // waitForAnimate: false,
+    centerMode: true,
+    variableWidth: true,
+    swipe: false,
   });
 });
 
