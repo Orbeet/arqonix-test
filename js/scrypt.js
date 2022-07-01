@@ -135,6 +135,34 @@ $(document).ready(function () {
     variableWidth: true,
     swipe: false,
   });
+
+  // ---------- Creation1 slider -----------
+  $(".creation1__slider").slick({
+    // adaptiveHeight: true,
+    slidesToShow: 1,
+    // waitForAnimate: false,
+    // centerMode: true,
+    // variableWidth: true,
+    // swipe: false,
+    prevArrow:
+      "<img src='../assets/images/arrow-prev.svg' class='arrow__prev' alt='1'>",
+    nextArrow:
+      "<img src='../assets/images/arrow-next.svg' class='arrow__next' alt='2'>",
+  });
+
+  // ---------- Creation2 slider -----------
+  $(".creation2__slider").slick({
+    // adaptiveHeight: true,
+    slidesToShow: 1,
+    // waitForAnimate: false,
+    // centerMode: true,
+    // variableWidth: true,
+    // swipe: false,
+    prevArrow:
+      "<img src='../assets/images/arrow-prev.svg' class='arrow__prev' alt='1'>",
+    nextArrow:
+      "<img src='../assets/images/arrow-next.svg' class='arrow__next' alt='2'>",
+  });
 });
 
 // --------------- /End Partners Slider ----------------
