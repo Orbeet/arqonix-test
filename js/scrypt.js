@@ -146,10 +146,9 @@ $(document).ready(function () {
     // variableWidth: true,
     // swipe: false,
     prevArrow:
-      "<img src='../assets/images/arrow-prev.svg' class='arrow__prev' alt='1'>",
-    // "<img src='/arrow-prev.svg' class='arrow__prev' alt='1'>",
-    // "<img src='https://svgshare.com/i/6Ei.svg' class='arrow__prev' alt='1'>",
-    // "<div><img src='../assets/images/arrow-prev.svg' class='arrow__prev' alt='1'></div>",
+      // "<img src='../assets/images/arrow-prev.svg' class='arrow__prev' alt='1'>",
+      // "<img src='https://svgshare.com/i/6Ei.svg' class='arrow__prev' alt='1'>",
+      "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
     nextArrow:
       "<img src='../assets/images/arrow-next.svg' class='arrow__next' alt='2'>",
     // "<div class='arrow__next'><span><svg width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
