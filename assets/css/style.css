@@ -683,6 +683,17 @@ body._lock {
   z-index: 5;
   font-size: 0;
 }
+@media (max-width: 967px) {
+  .creation1__slider {
+    width: calc(327px + (470 - 327) * ((100vw - 375px) / (967 - 375)));
+    margin: 0 auto;
+  }
+}
+@media (max-width: 373px) {
+  .creation1__slider {
+    width: 270px;
+  }
+}
 /* ==================== /End Creation1 Slider ======================= */
 
 /* ==================== Creation2 Slider ======================= */
@@ -786,7 +797,7 @@ body._lock {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 1px;
+  /* padding: 0 1px; */
 }
 .creation2__titleAndText {
   /* background-color: aqua; */
@@ -832,6 +843,11 @@ body._lock {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.creation2__imgBig img {
+  max-width: 100%;
+  border-radius: 4%;
+  object-fit: cover;
+}
 .creation2__imgBig-one {
   background-image: url(../images/test-medium3.jpg);
 }
@@ -869,11 +885,16 @@ body._lock {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.creation2__smallImg img {
+  max-width: 100%;
+  border-radius: 7%;
+  object-fit: cover;
+}
 .creation2__smallImg-one {
-  background-image: url(../images/test-smal2.jpg);
+  /* background-image: url(../images/test-smal2.jpg); */
 }
 .creation2__smallImg-two {
-  background-image: url(../images/test-smal2.jpg);
+  /* background-image: url(../images/test-smal2.jpg); */
 }
 /* ==================== @media Creation Slider ======================= */
 @media (max-width: 1680px) {
@@ -937,7 +958,8 @@ body._lock {
     /* width: calc(20px + (80 - 20) * ((100vw - 375px) / (1680 - 375))); */
     height: 40px;
     /* height: calc(20px + (80 - 20) * ((100vw - 375px) / (1680 - 375))); */
-    padding: 12px;
+    /* padding: 12px; */
+    padding: 11px 14px;
     /* padding: calc(1px + (23 - 1) * ((100vw - 375px) / (1680 - 375))); */
   }
   .arrow__next {
@@ -990,7 +1012,7 @@ body._lock {
   .creation2__slider {
     width: 270px;
   }
-  .arrow__prev {
+  .arrow__prev333 {
     left: -20px;
     /* left: calc(-10px + (-90 - -10) * ((100vw - 375px) / (1680 - 375))); */
     width: 40px;
@@ -1000,7 +1022,7 @@ body._lock {
     padding: 12px;
     /* padding: calc(1px + (23 - 1) * ((100vw - 375px) / (1680 - 375))); */
   }
-  .arrow__next {
+  .arrow__next333 {
     right: -20px;
     /* right: calc(-10px + (-90 - -10) * ((100vw - 375px) / (1680 - 375))); */
     width: 40px;
