@@ -140,7 +140,7 @@ $(document).ready(function () {
   $(".creation1__slider").slick({
     // adaptiveHeight: true,
     slidesToShow: 1,
-    fade: true,
+    // fade: true,
     // waitForAnimate: false,
     // centerMode: true,
     // variableWidth: true,
@@ -171,171 +171,111 @@ $(document).ready(function () {
     nextArrow:
       "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
   });
+  // -----------------------------------------------------------------------
+  // -----------------------------------------------------------------------
+  // -----------------------------------------------------------------------
+
+  // ---------- collection1Top__slider -----------
+  $(".collection1Top__slider").slick({
+    asNavFor: ".collection1Bottom__slider",
+    // adaptiveHeight: true,
+    slidesToShow: 1,
+    // infinite: false,
+    fade: true,
+    // waitForAnimate: false,
+    // centerMode: true,
+    // variableWidth: true,
+    draggable: false,
+    // touchMove: false,
+    swipe: false,
+    arrows: false,
+    //   prevArrow:
+    //     "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
+    //   nextArrow:
+    //     "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
+  });
+
+  // ---------- collection1Top__sliderInside -----------
+  $(".collection1Top__sliderInside").slick({
+    // adaptiveHeight: true,
+    // slidesToShow: 1,
+    infinite: false,
+    // appendArrows: $(".sliderInside"),
+    // infinite: false,
+    // fade: true,
+    // waitForAnimate: false,
+    // centerMode: true,
+    // variableWidth: true,
+    // swipe: false,
+    prevArrow:
+      "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
+    nextArrow:
+      "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
+  });
+
+  // ---------- collection1Top__slider TEST --------------------------------
+  var $wrapperSlider = $(".collection1Top__sliderTEST"),
+    wrapperSlider = $wrapperSlider[0];
+  $(".collection1Top__sliderTEST").slick({
+    // dots: true,
+    // infinite: true,
+    fade: true,
+    centerMode: false,
+    variableWidth: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // swipe: false,
+    // draggable: false,
+  });
+
+  $(".collection1Top__sliderInsideTEST").on("mousedown", function () {
+    wrapperSlider.slick.setOption({
+      swipe: false,
+    });
+  });
+
+  $(".collection1Top__sliderInsideTEST")
+    .slick({
+      dots: false,
+      infinite: false,
+      centerMode: false,
+      variableWidth: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipe: false,
+      prevArrow:
+        "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
+      nextArrow:
+        "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
+    })
+    .on("afterChange", function (event, slick) {
+      wrapperSlider.slick.setOption({
+        swipe: true,
+      });
+    });
+  // ---------- /End collection1Top__slider TEST ----------------------------
+
+  // ---------- collection1Bottom__slider -----------
+  $(".collection1Bottom__slider").slick({
+    // adaptiveHeight: true,
+    // slidesToShow: 1,
+    // infinite: false,
+    // fade: true,
+    // waitForAnimate: false,
+    centerMode: true,
+    variableWidth: true,
+    asNavFor: ".collection1Top__slider",
+    // swipe: false,
+    prevArrow:
+      "<div class='arrow__prev-bottom'><div class='arrow__prev-svg-bottom'></div></div>",
+    nextArrow:
+      "<div class='arrow__next-bottom'><div class='arrow__next-svg-bottom'></div></div>",
+  });
 });
 
 // --------------- /End Partners Slider ----------------
-
-// $(document).ready(function () {
-//   $(function () {
-//     $(".accordion__title").on("click", function (e) {
-//       e.preventDefault();
-//       var $this = $(this);
-
-//       if (!$this.hasClass("accordion-active")) {
-//         $(".accordion__content").slideUp(400);
-//         $(".accordion__title").removeClass("accordion-active");
-//         $(".accordion__arrow").removeClass("accordion__rotate");
-//       }
-
-//       $this.toggleClass("accordion-active");
-//       $this.next().slideToggle();
-//       $(".accordion__arrow", this).toggleClass("accordion__rotate");
-//     });
-//   });
-// });
-
-// ===================== FAQ Test ==================
-// stagger items
-// gsap.fromTo(
-//   ".accordion-item",
-//   { autoAlpha: 0, scale: 0.9 },
-//   { duration: 1, autoAlpha: 1, scale: 1, ease: Power1.easeInOut, stagger: 0.05 }
-// );
-
-// function open and close accordion itens
-
-// const accordionItems = document.querySelectorAll(".accordion-item");
-// accordionItems.forEach((itemAccordion) => {
-// accordion content
-
-// const accordionTitle = itemAccordion.querySelector(".title");
-// const accordionContent = itemAccordion.querySelector(".content");
-// const accordionArrow = itemAccordion.querySelector(".arrow");
-
-// on click title
-
-// accordionTitle.addEventListener("click", (event) => {
-// prevent click
-
-// event.preventDefault();
-
-// check if accordion item is open
-
-// if (!itemAccordion.classList.contains("-active")) {
-// close others accordions
-
-// const accordionItemsActive = document.querySelectorAll(
-//   ".accordion-item.-active"
-// );
-// accordionItemsActive.forEach((itemAccordionActive) => {
-//   const accordionContent = itemAccordionActive.querySelector(".content");
-//   const accordionArrow = itemAccordionActive.querySelector(".arrow");
-
-// remove active class accordion item
-
-// itemAccordionActive.classList.remove("-active");
-
-// close content
-
-// gsap.to(accordionContent, {
-//   duration: 0.5,
-//   height: 0,
-//   display: "none",
-//   autoAlpha: 0,
-//   ease: "expo.inOut",
-// });
-
-// rotate arrow
-
-//   gsap.to(accordionArrow, {
-//     duration: 0.5,
-//     autoAlpha: 0,
-//     y: -10,
-//     ease: "back.in",
-//     onComplete: function () {
-//       gsap.set(accordionArrow, { rotation: 0 });
-//     },
-//   });
-//   gsap.to(accordionArrow, {
-//     duration: 0.5,
-//     autoAlpha: 1,
-//     y: 0,
-//     ease: "back.out",
-//     delay: 0.5,
-//   });
-// });
-
-// add active class accordion item
-
-// itemAccordion.classList.add("-active");
-
-// // open content
-// gsap.set(accordionContent, {
-//   height: "auto",
-//   display: "block",
-//   autoAlpha: 1,
-// });
-// gsap.from(accordionContent, {
-//   duration: 0.5,
-//   height: 0,
-//   display: "none",
-//   autoAlpha: 0,
-//   ease: "expo.inOut",
-// });
-
-// rotate arrow
-
-//   gsap.to(accordionArrow, {
-//     duration: 0.5,
-//     autoAlpha: 0,
-//     y: 10,
-//     ease: "back.in",
-//     onComplete: function () {
-//       gsap.set(accordionArrow, { rotation: 180 });
-//     },
-//   });
-//   gsap.to(accordionArrow, {
-//     duration: 0.5,
-//     autoAlpha: 1,
-//     y: 0,
-//     ease: "back.out",
-//     delay: 0.5,
-//   });
-// } else {
-// remove active class accordion item
-
-// itemAccordion.classList.remove("-active");
-
-// // close content
-// gsap.to(accordionContent, {
-//   duration: 0.5,
-//   height: 0,
-//   display: "none",
-//   autoAlpha: 0,
-//   ease: "expo.inOut",
-// });
-
-// rotate arrow
-
-//       gsap.to(accordionArrow, {
-//         duration: 0.5,
-//         autoAlpha: 0,
-//         y: -10,
-//         ease: "back.in",
-//         onComplete: function () {
-//           gsap.set(accordionArrow, { rotation: 0 });
-//         },
-//       });
-//       gsap.to(accordionArrow, {
-//         duration: 0.5,
-//         autoAlpha: 1,
-//         y: 0,
-//         ease: "back.out",
-//         delay: 0.5,
-//       });
-//     }
-//   });
-// });
 
 // ========================= FAQ LAST ==================
 $(document).ready(function () {
