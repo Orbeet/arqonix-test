@@ -175,7 +175,7 @@ $(document).ready(function () {
   // -----------------------------------------------------------------------
   // -----------------------------------------------------------------------
 
-  // ---------- collection1Top__slider -----------
+  // ---------- collection1Top__slider1 -----------
   $(".collection1Top__slider").slick({
     asNavFor: ".collection1Bottom__slider",
     // adaptiveHeight: true,
@@ -195,10 +195,49 @@ $(document).ready(function () {
     //     "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
   });
 
-  // ---------- collection1Top__sliderInside -----------
+  // ---------- collection1Top__slider2 -----------
+  $(".collection1Top__slider-2").slick({
+    asNavFor: ".collection1Bottom__slider-2",
+    // adaptiveHeight: true,
+    slidesToShow: 1,
+    // infinite: false,
+    fade: true,
+    // waitForAnimate: false,
+    // centerMode: true,
+    // variableWidth: true,
+    draggable: false,
+    // touchMove: false,
+    swipe: false,
+    arrows: false,
+    //   prevArrow:
+    //     "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
+    //   nextArrow:
+    //     "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
+  });
+
+  // ---------- collection1Top__sliderInside1 -----------
   $(".collection1Top__sliderInside").slick({
     // adaptiveHeight: true,
     // slidesToShow: 1,
+    infinite: false,
+    // appendArrows: $(".sliderInside"),
+    // infinite: false,
+    // fade: true,
+    // waitForAnimate: false,
+    // centerMode: true,
+    // variableWidth: true,
+    // swipe: false,
+    prevArrow:
+      "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
+    nextArrow:
+      "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
+  });
+
+  // ---------- collection1Top__sliderInside2 -----------
+  $(".collection1Top__sliderInside-2").slick({
+    // adaptiveHeight: true,
+    // slidesToShow: 1,
+    initialSlide: 2,
     infinite: false,
     // appendArrows: $(".sliderInside"),
     // infinite: false,
@@ -257,7 +296,7 @@ $(document).ready(function () {
     });
   // ---------- /End collection1Top__slider TEST ----------------------------
 
-  // ---------- collection1Bottom__slider -----------
+  // ---------- collection1Bottom__slider1 -----------
   $(".collection1Bottom__slider").slick({
     // adaptiveHeight: true,
     // slidesToShow: 1,
@@ -267,6 +306,23 @@ $(document).ready(function () {
     centerMode: true,
     variableWidth: true,
     asNavFor: ".collection1Top__slider",
+    // swipe: false,
+    prevArrow:
+      "<div class='arrow__prev-bottom'><div class='arrow__prev-svg-bottom'></div></div>",
+    nextArrow:
+      "<div class='arrow__next-bottom'><div class='arrow__next-svg-bottom'></div></div>",
+  });
+
+  // ---------- collection1Bottom__slider2 -----------
+  $(".collection1Bottom__slider-2").slick({
+    // adaptiveHeight: true,
+    // slidesToShow: 1,
+    // infinite: false,
+    // fade: true,
+    // waitForAnimate: false,
+    centerMode: true,
+    variableWidth: true,
+    asNavFor: ".collection1Top__slider-2",
     // swipe: false,
     prevArrow:
       "<div class='arrow__prev-bottom'><div class='arrow__prev-svg-bottom'></div></div>",
