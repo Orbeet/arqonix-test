@@ -808,12 +808,14 @@ body._lock {
 }
 .collection1Top__collectionItem {
   border-radius: 16px;
-  width: 228px;
+  width: 227.6px;
   height: 211px;
+  background-color: black;
 }
 .collection1Top__collectionItem img {
+  object-fit: cover;
   border-radius: 16px;
-  width: 228px;
+  width: 227.5px;
   height: 211px;
 }
 .collection1Top__collectionItem-1 {
@@ -1206,6 +1208,16 @@ body._lock {
     display: flex;
     flex-direction: column;
   }
+  .creation1__slider .slick-arrow {
+    /* position: absolute; */
+    top: 55%;
+    transform: translateY(0%);
+    transition: all 0.3s ease 0s;
+
+    /* z-index: 5; */
+    /* font-size: 0; */
+    /* background-color: #6a30e3; */
+  }
 }
 
 @media (max-width: 373px) {
@@ -1293,7 +1305,9 @@ body._lock {
   /* box-sizing: content-box; */
   /* position: absolute; */
   top: 50%;
+  /* top: 55%; */
   transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   transition: all 0.3s ease 0s;
   /* z-index: 5; */
   /* font-size: 0; */
@@ -1497,6 +1511,22 @@ body._lock {
   .creation2__slider {
     width: calc(333px + (476 - 333) * ((100vw - 375px) / (967 - 375)));
     /* margin: 0 auto; */
+  }
+  .creation2__slider .slick-arrow {
+    /* box-sizing: content-box; */
+    /* position: absolute; */
+    top: 55%;
+    /* top: 55%; */
+    transform: translateY(0%);
+    /* transform: translateY(-50%); */
+    transition: all 0.3s ease 0s;
+    /* z-index: 5; */
+    /* font-size: 0; */
+    /* background-color: #6a30e3; */
+    /* width: 30px; */
+    /* height: 30px; */
+    /* background-color: gold; */
+    /* padding: 11.5px 14.6px; */
   }
   .arrow__prev {
     /* left: -18px; */
@@ -1900,19 +1930,113 @@ body._lock {
 .team__card-last {
   margin-right: 0px;
 }
+/* ------------- Before After --------------- */
 .card__img {
   border-radius: 16px;
-  /* background-color: red; */
-  background-image: url("../images/test-Ava.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: red;
+  /* background-image: url("../images/test-Ava.jpg"); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   width: 223px;
   /* width: 100%; */
   height: 223px;
   /* height: 100%; */
   margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
 }
+.images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.img-1 {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  background: url("../images/test-small2-1.jpg") no-repeat;
+  background-size: cover;
+}
+.img-2 {
+  position: absolute;
+  /* border-radius: 16px; */
+  width: 50%;
+  height: 100%;
+  background: url("../images/test-small2-2.jpg") no-repeat;
+  background-size: cover;
+}
+.slider1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.slider1 input {
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+}
+.slider1 input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 223px;
+  width: 2px;
+  background: none;
+  cursor: col-resize;
+}
+.drag-line {
+  width: 2px;
+  height: 223px;
+  position: absolute;
+  /* background-color: gold; */
+  left: 49.85%;
+  pointer-events: none;
+}
+.drag-line::before,
+.drag-line::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 90px;
+  background-color: #6a30e3;
+}
+.drag-line::before {
+  top: 0;
+}
+.drag-line::after {
+  bottom: 0;
+}
+.drag-line span {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #6a30e3;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.drag-line span::before,
+.drag-line span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  border: 10px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.drag-line span::before {
+  left: 45%;
+  border-left-color: white;
+}
+.drag-line span::after {
+  left: 55%;
+  border-top-color: white;
+}
+/* ------------- /End Before After ------------ */
+
 .card__title {
   margin-bottom: 2px;
   text-align: center;
@@ -2053,14 +2177,18 @@ body._lock {
   min-width: 0;
 }
 .team__slider-img {
-  background-image: url(../images/test-Ava.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url(../images/test-Ava.jpg); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   width: 157px;
   height: 157px;
   border-radius: 16px;
   margin-bottom: 8px;
+
+  background-color: red;
+  position: relative;
+  overflow: hidden;
 }
 .team__slider-title {
   margin-bottom: 2px;

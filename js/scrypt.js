@@ -80,7 +80,6 @@ const observer = new MutationObserver(callback);
 observer.observe(targetNode, config);
 
 // scroll on click
-// const menuLinks = document.querySelectorAll(".menu__link[data-goto]");
 const menuLinks = document.querySelectorAll(".goto[data-goto]");
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {
@@ -121,7 +120,6 @@ $(document).ready(function () {
   $(".partners__slider").slick({
     adaptiveHeight: true,
     slidesToShow: 3,
-    // waitForAnimate: false,
     centerMode: true,
     variableWidth: true,
   });
@@ -130,7 +128,6 @@ $(document).ready(function () {
   $(".team__slider").slick({
     adaptiveHeight: true,
     slidesToShow: 3,
-    // waitForAnimate: false,
     centerMode: true,
     variableWidth: true,
     swipe: false,
@@ -138,95 +135,46 @@ $(document).ready(function () {
 
   // ---------- Creation1 slider -----------
   $(".creation1__slider").slick({
-    // adaptiveHeight: true,
     slidesToShow: 1,
-    // fade: true,
-    // waitForAnimate: false,
-    // centerMode: true,
-    // variableWidth: true,
-    // swipe: false,
     prevArrow:
-      // "<img src='../assets/images/arrow-prev.svg' class='arrow__prev' alt='1'>",
-      // "<img src='https://svgshare.com/i/6Ei.svg' class='arrow__prev' alt='1'>",
       "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
     nextArrow:
       "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
-    // "<img src='../assets/images/arrow-next.svg' class='arrow__next' alt='2'>",
-    // "<div class='arrow__next'><span><svg width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
-    // <path d='M11.0921 8.33977L2.93459 0.808928C2.74592 0.634608 2.49406 0.538574 2.22551 0.538574C1.95695 0.538574 1.70509 0.634608 1.51642 0.808928L0.91568 1.3634C0.524773 1.72469 0.524773 2.31191 0.91568 2.67265L7.76571 8.9966L0.908079 15.3276C0.719407 15.5019 0.615234 15.7343 0.615234 15.9821C0.615234 16.2301 0.719407 16.4625 0.908079 16.637L1.50882 17.1913C1.69764 17.3656 1.94935 17.4617 2.21791 17.4617C2.48646 17.4617 2.73832 17.3656 2.92699 17.1913L11.0921 9.65357C11.2812 9.4787 11.3851 9.24522 11.3845 8.99702C11.3851 8.74785 11.2812 8.51451 11.0921 8.33977Z' fill='white'/>
-    // </svg></span></div>",
   });
 
   // ---------- Creation2 slider -----------
   $(".creation2__slider").slick({
-    // adaptiveHeight: true,
     slidesToShow: 1,
-    // fade: true,
-    // waitForAnimate: false,
-    // centerMode: true,
-    // variableWidth: true,
-    // swipe: false,
     prevArrow:
       "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
     nextArrow:
       "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
   });
-  // -----------------------------------------------------------------------
-  // -----------------------------------------------------------------------
   // -----------------------------------------------------------------------
 
   // ---------- collection1Top__slider1 -----------
   $(".collection1Top__slider").slick({
     asNavFor: ".collection1Bottom__slider",
-    // adaptiveHeight: true,
     slidesToShow: 1,
-    // infinite: false,
     fade: true,
-    // waitForAnimate: false,
-    // centerMode: true,
-    // variableWidth: true,
     draggable: false,
-    // touchMove: false,
     swipe: false,
     arrows: false,
-    //   prevArrow:
-    //     "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
-    //   nextArrow:
-    //     "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
   });
 
   // ---------- collection1Top__slider2 -----------
   $(".collection1Top__slider-2").slick({
     asNavFor: ".collection1Bottom__slider-2",
-    // adaptiveHeight: true,
     slidesToShow: 1,
-    // infinite: false,
     fade: true,
-    // waitForAnimate: false,
-    // centerMode: true,
-    // variableWidth: true,
     draggable: false,
-    // touchMove: false,
     swipe: false,
     arrows: false,
-    //   prevArrow:
-    //     "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
-    //   nextArrow:
-    //     "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
   });
 
   // ---------- collection1Top__sliderInside1 -----------
   $(".collection1Top__sliderInside").slick({
-    // adaptiveHeight: true,
-    // slidesToShow: 1,
     infinite: false,
-    // appendArrows: $(".sliderInside"),
-    // infinite: false,
-    // fade: true,
-    // waitForAnimate: false,
-    // centerMode: true,
-    // variableWidth: true,
-    // swipe: false,
     prevArrow:
       "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
     nextArrow:
@@ -235,8 +183,6 @@ $(document).ready(function () {
 
   // ---------- collection1Top__sliderInside2 -----------
   $(".collection1Top__sliderInside-2").slick({
-    // adaptiveHeight: true,
-    // slidesToShow: 1,
     initialSlide: 2,
     infinite: false,
     // appendArrows: $(".sliderInside"),
@@ -252,61 +198,11 @@ $(document).ready(function () {
       "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
   });
 
-  // ---------- collection1Top__slider TEST --------------------------------
-  var $wrapperSlider = $(".collection1Top__sliderTEST"),
-    wrapperSlider = $wrapperSlider[0];
-  $(".collection1Top__sliderTEST").slick({
-    // dots: true,
-    // infinite: true,
-    fade: true,
-    centerMode: false,
-    variableWidth: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // swipe: false,
-    // draggable: false,
-  });
-
-  $(".collection1Top__sliderInsideTEST").on("mousedown", function () {
-    wrapperSlider.slick.setOption({
-      swipe: false,
-    });
-  });
-
-  $(".collection1Top__sliderInsideTEST")
-    .slick({
-      dots: false,
-      infinite: false,
-      centerMode: false,
-      variableWidth: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      swipe: false,
-      prevArrow:
-        "<div class='arrow__prev'><div class='arrow__prev-svg'></div></div>",
-      nextArrow:
-        "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
-    })
-    .on("afterChange", function (event, slick) {
-      wrapperSlider.slick.setOption({
-        swipe: true,
-      });
-    });
-  // ---------- /End collection1Top__slider TEST ----------------------------
-
   // ---------- collection1Bottom__slider1 -----------
   $(".collection1Bottom__slider").slick({
-    // adaptiveHeight: true,
-    // slidesToShow: 1,
-    // infinite: false,
-    // fade: true,
-    // waitForAnimate: false,
     centerMode: true,
     variableWidth: true,
     asNavFor: ".collection1Top__slider",
-    // swipe: false,
     prevArrow:
       "<div class='arrow__prev-bottom'><div class='arrow__prev-svg-bottom'></div></div>",
     nextArrow:
@@ -315,22 +211,15 @@ $(document).ready(function () {
 
   // ---------- collection1Bottom__slider2 -----------
   $(".collection1Bottom__slider-2").slick({
-    // adaptiveHeight: true,
-    // slidesToShow: 1,
-    // infinite: false,
-    // fade: true,
-    // waitForAnimate: false,
     centerMode: true,
     variableWidth: true,
     asNavFor: ".collection1Top__slider-2",
-    // swipe: false,
     prevArrow:
       "<div class='arrow__prev-bottom'><div class='arrow__prev-svg-bottom'></div></div>",
     nextArrow:
       "<div class='arrow__next-bottom'><div class='arrow__next-svg-bottom'></div></div>",
   });
 });
-
 // --------------- /End Partners Slider ----------------
 
 // ========================= FAQ LAST ==================
@@ -348,3 +237,23 @@ $(document).ready(function () {
     return false;
   });
 });
+
+// ========================= Before After1 ==================
+const slider1 = document.querySelector(".slider1 input");
+const img2 = document.querySelector(".images .img-2");
+const dragLine1 = document.querySelector(".slider1 .drag-line");
+slider1.oninput = () => {
+  let slider1Val = slider1.value;
+  dragLine1.style.left = slider1Val + "%";
+  img2.style.width = slider1Val + "%";
+};
+
+// ========================= Before After2 ==================
+const slider2 = document.querySelector(".slider2 input");
+const img4 = document.querySelector(".images .img-4");
+const dragLine2 = document.querySelector(".slider2 .drag-line");
+slider2.oninput = () => {
+  let slider2Val = slider2.value;
+  dragLine2.style.left = slider2Val + "%";
+  img4.style.width = slider2Val + "%";
+};
