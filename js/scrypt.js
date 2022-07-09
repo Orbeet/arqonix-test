@@ -248,12 +248,62 @@ slider1.oninput = () => {
   img2.style.width = slider1Val + "%";
 };
 
-// ========================= Before After2 ==================
-const slider2 = document.querySelector(".slider2 input");
-const img4 = document.querySelector(".images .img-4");
-const dragLine2 = document.querySelector(".slider2 .drag-line");
-slider2.oninput = () => {
-  let slider2Val = slider2.value;
-  dragLine2.style.left = slider2Val + "%";
-  img4.style.width = slider2Val + "%";
+// ========================= Before After new1 ==================
+const container = document.querySelector(".container1");
+const slider = document.querySelector(".container1__slider");
+const leftImage = document.querySelector(".container1__left-image");
+const rightImage = document.querySelector(".container1__right-image");
+
+let clicked = false;
+let xPosition;
+
+const sliderDragHandler = (event) => {
+  xPosition = event.layerX;
+  let containerSize = container.offsetWidth;
+
+  if (clicked) {
+    leftImage.style.width = `${xPosition}px`;
+    slider.style.left = `${xPosition}px`;
+
+    if (xPosition < 30) {
+      leftImage.style.width = 0;
+      slider.style.left = 0;
+    }
+
+    if (xPosition + 30 > containerSize) {
+      leftImage.style.width = `${containerSize}px`;
+      slider.style.left = `${containerSize}px`;
+    }
+  }
 };
+
+const sliderTouchStartHandler = (event) => {
+  xPosition = event.touches[0].clientX;
+};
+
+const sliderTouchMoveHandler = (event) => {
+  let containerSize = container.offsetWidth;
+  let touch = event.touches[0].clientX;
+
+  leftImage.style.width = `${touch}px`;
+  slider.style.left = `${touch}px`;
+
+  if (touch < 10) {
+    leftImage.style.width = 0;
+    slider.style.left = "2px";
+  }
+  if (touch + 10 > containerSize) {
+    leftImage.style.width = `${containerSize}px`;
+    slider.style.left = `${containerSize - 2}px`;
+  }
+  event.preventDefault();
+};
+
+/* desktop events */
+container.addEventListener("mousedown", () => (clicked = true));
+container.addEventListener("mouseup", () => (clicked = false));
+container.addEventListener("mousemove", sliderDragHandler);
+
+/* mobile events */
+container.addEventListener("touchstart", sliderTouchStartHandler);
+container.addEventListener("touchmove", sliderTouchMoveHandler);

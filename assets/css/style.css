@@ -1946,6 +1946,16 @@ body._lock {
   position: relative;
   overflow: hidden;
 }
+.team__slider-img {
+  width: 157px;
+  height: 157px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
 .images {
   width: 100%;
   height: 100%;
@@ -2035,7 +2045,226 @@ body._lock {
   left: 55%;
   border-top-color: white;
 }
+/* ------ Vendor Prefix Test --------- */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.team__slider-img {
+  width: 157px;
+  height: 157px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+.images {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.img-1 {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  background: url("../images/test-small2-1.jpg") no-repeat;
+  background-size: cover;
+}
+.img-2 {
+  position: absolute;
+  /* border-radius: 16px; */
+  width: 50%;
+  height: 100%;
+  background: url("../images/test-small2-2.jpg") no-repeat;
+  background-size: cover;
+}
+.slider1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.slider1 input {
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+}
+.slider1 input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 223px;
+  width: 2px;
+  background: none;
+  cursor: col-resize;
+}
+.drag-line {
+  width: 2px;
+  height: 223px;
+  position: absolute;
+  /* background-color: gold; */
+  left: 49.85%;
+  pointer-events: none;
+}
+.drag-line::before,
+.drag-line::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 90px;
+  background-color: #6a30e3;
+}
+.drag-line::before {
+  top: 0;
+}
+.drag-line::after {
+  bottom: 0;
+}
+.drag-line span {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #6a30e3;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.drag-line span::before,
+.drag-line span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  border: 10px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.drag-line span::before {
+  left: 45%;
+  border-left-color: white;
+}
+.drag-line span::after {
+  left: 55%;
+  border-top-color: white;
+}
 /* ------------- /End Before After ------------ */
+
+/* ------------- Before After New1 ------------ */
+.container1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  /* width: 100vw; */
+  max-width: 100%;
+  width: 157px;
+  height: 157px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  /* height: 223px; */
+  margin: 0 auto;
+  background-color: turquoise;
+  /* -webkit-box-shadow: 0px 16px 32px rgba(34, 34, 34, 0.15); */
+  /* box-shadow: 0px 16px 32px rgba(34, 34, 34, 0.15); */
+  overflow-x: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container1__slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 2px;
+  background-color: #222222;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  pointer-events: none;
+}
+.container1__left-image,
+.container1__right-image {
+  position: absolute;
+  /* width: 100vw; */
+  width: 100%;
+  height: 100%;
+}
+.container1__left-image {
+  /* width: 50vw; */
+  width: 50%;
+  /* max-width: 100vw; */
+  max-width: 100%;
+  overflow: hidden;
+}
+.left-image {
+  /* width: 100vw; */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1613493565040-28dac4e83cc4?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNTQ1Mjc2NQ&ixlib=rb-1.2.1&q=85");
+  background-size: 100% 100%;
+}
+.right-image {
+  /* width: 100vw; */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1613327986042-63d4425a1a5d?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNTQ1Mjc2NQ&ixlib=rb-1.2.1&q=85");
+  background-size: 100% 100%;
+}
+.container1__slider-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+}
+
+.slider-btn {
+  padding: 8px;
+  background-color: #13aacb;
+}
+
+.slider-btn__left-arrow {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.slider-btn__right-arrow {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* ------------- /End Before After New1 ------------ */
 
 .card__title {
   margin-bottom: 2px;
