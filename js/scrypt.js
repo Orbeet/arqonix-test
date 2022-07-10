@@ -309,79 +309,138 @@ slider1.oninput = () => {
 // container.addEventListener("touchmove", sliderTouchMoveHandler);
 
 // ========================= Before After new2 ==================
-const slider = document.querySelector(".slider__one");
-const before = slider.querySelector(".before");
-const beforeImage = before.querySelector("img");
-const change = slider.querySelector(".change");
-// const body = document.body;
-let isActive = false;
+// const slider = document.querySelector(".slider__one");
+// const before = slider.querySelector(".before");
+// const beforeImage = before.querySelector("img");
+// const change = slider.querySelector(".change");
+// let isActive = false;
 
-document.addEventListener("DOMContentLoaded", () => {
-  let width = slider.offsetWidth;
-  beforeImage.style.width = `${width}px`;
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   let width = slider.offsetWidth;
+//   beforeImage.style.width = `${width}px`;
+// });
 
-const beforeAfterSlider = (x) => {
-  let shift = Math.max(0, Math.min(x, slider.offsetWidth));
-  before.style.width = `${shift}px`;
-  change.style.left = `${shift}px`;
+// const beforeAfterSlider = (x) => {
+//   let shift = Math.max(0, Math.min(x, slider.offsetWidth));
+//   before.style.width = `${shift}px`;
+//   change.style.left = `${shift}px`;
+// };
+
+// const pauseEvents = (e) => {
+//   e.stopPropagation();
+//   e.preventDefault();
+//   return false;
+// };
+
+// document.body.addEventListener("mousedown", () => {
+//   isActive = true;
+// });
+
+// document.body.addEventListener("mouseup", () => {
+//   isActive = false;
+// });
+
+// document.body.addEventListener("mouseleave", () => {
+//   isActive = false;
+// });
+
+// document.body.addEventListener("mousemove", (e) => {
+//   if (!isActive) {
+//     return;
+//   }
+
+//   let x = e.pageX;
+
+//   x -= slider.getBoundingClientRect().left;
+//   beforeAfterSlider(x);
+//   pauseEvents(e);
+// });
+
+// document.body.addEventListener("touchstart", () => {
+//   isActive = true;
+// });
+
+// document.body.addEventListener("touchend", () => {
+//   isActive = false;
+// });
+
+// document.body.addEventListener("touchcancel", () => {
+//   isActive = false;
+// });
+
+// document.body.addEventListener("touchmove", (e) => {
+//   if (!isActive) {
+//     return;
+//   }
+
+//   let x;
+//   let i;
+
+//   for (i = 0; e < e.changedTouches.length; i++) {
+//     x = e.changedTouches[i].pageX;
+//   }
+
+//   x -= slider.getBoundingClientRect().left;
+//   beforeAfterSlider(x);
+//   pauseEvents(e);
+// });
+
+// ========================= Before After TEST777 ==================
+const container = document.querySelector(".container777");
+const slider = document.querySelector(".container__slider");
+const leftImage = document.querySelector(".container__left-image");
+const rightImage = document.querySelector(".container__right-image");
+
+let clicked = false;
+let xPosition;
+
+const sliderDragHandler = (event) => {
+  xPosition = event.layerX;
+  let containerSize = container.offsetWidth;
+
+  if (clicked) {
+    leftImage.style.width = `${xPosition}px`;
+    slider.style.left = `${xPosition}px`;
+
+    if (xPosition < 30) {
+      leftImage.style.width = 0;
+      slider.style.left = 0;
+    }
+
+    if (xPosition + 30 > containerSize) {
+      leftImage.style.width = `${containerSize}px`;
+      slider.style.left = `${containerSize}px`;
+    }
+  }
 };
 
-const pauseEvents = (e) => {
-  e.stopPropagation();
-  e.preventDefault();
-  return false;
+const sliderTouchStartHandler = (event) => {
+  xPosition = event.touches[0].clientX;
 };
 
-body.addEventListener("mousedown", () => {
-  isActive = true;
-});
+const sliderTouchMoveHandler = (event) => {
+  let containerSize = container.offsetWidth;
+  let touch = event.touches[0].clientX;
 
-body.addEventListener("mouseup", () => {
-  isActive = false;
-});
+  leftImage.style.width = `${touch}px`;
+  slider.style.left = `${touch}px`;
 
-body.addEventListener("mouseleave", () => {
-  isActive = false;
-});
-
-body.addEventListener("mousemove", (e) => {
-  if (!isActive) {
-    return;
+  if (touch < 10) {
+    leftImage.style.width = 0;
+    slider.style.left = "2px";
   }
-
-  let x = e.pageX;
-
-  x -= slider.getBoundingClientRect().left;
-  beforeAfterSlider(x);
-  pauseEvents(e);
-});
-
-body.addEventListener("touchstart", () => {
-  isActive = true;
-});
-
-body.addEventListener("touchend", () => {
-  isActive = false;
-});
-
-body.addEventListener("touchcancel", () => {
-  isActive = false;
-});
-
-body.addEventListener("touchmove", (e) => {
-  if (!isActive) {
-    return;
+  if (touch + 10 > containerSize) {
+    leftImage.style.width = `${containerSize}px`;
+    slider.style.left = `${containerSize - 2}px`;
   }
+  event.preventDefault();
+};
 
-  let x;
-  let i;
+/* desktop events */
+container.addEventListener("mousedown", () => (clicked = true));
+container.addEventListener("mouseup", () => (clicked = false));
+container.addEventListener("mousemove", sliderDragHandler);
 
-  for (i = 0; e < e.changedTouches.length; i++) {
-    x = e.changedTouches[i].pageX;
-  }
-
-  x -= slider.getBoundingClientRect().left;
-  beforeAfterSlider(x);
-  pauseEvents(e);
-});
+/* mobile events */
+container.addEventListener("touchstart", sliderTouchStartHandler);
+container.addEventListener("touchmove", sliderTouchMoveHandler);
