@@ -2225,7 +2225,9 @@ body._lock {
   -ms-user-select: none;
   user-select: none;
 }
-
+.container777 {
+  display: none;
+}
 @media (min-width: 768px) {
   .container777 {
     height: 360px;
@@ -2339,6 +2341,166 @@ body._lock {
 }
 /*# sourceMappingURL=index.css.map */
 /* ------------- /End Before After TEST777 ------------ */
+
+/* ------------- Before After TEST DT Only ------------ */
+/* Divider Styles */
+
+.divider-wrapper {
+  /* width: 550px; */
+  /* height: 500px; */
+  /* margin: 0px auto; */
+  /* position: relative; */
+}
+.divider-wrapper:hover {
+  cursor: none;
+}
+
+.divider-bar {
+  position: absolute;
+  width: 2px;
+  left: 50%;
+  top: 0px;
+  bottom: 1px;
+  background: #fff;
+  /* -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.4); 
+    -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4); */
+}
+
+.code-wrapper {
+  /* border: 2px solid #222; */
+
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* background: url("../images/test-small2-1.jpg") no-repeat; */
+  background-size: cover;
+}
+.teamDtImg1 {
+  /* display: block; */
+  /* width: 100%; */
+  /* height: 100%; */
+  background: url("../images/test-small2-3.jpg") no-repeat;
+  background-size: cover;
+}
+
+.design-wrapper,
+.design-image {
+  /* border-radius: 0 8px 8px 0; */
+  /* -moz-border-radius: 0 8px 8px 0; */
+  /* -webkit-border-radius: 0 8px 8px 0; */
+}
+
+.design-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+.design-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  /* background: url("../images/test-small2-2.jpg") no-repeat bottom right; */
+  background-size: cover;
+}
+.teamDtImg2 {
+  background: url("../images/test-small2-4.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg3 {
+  background: url("../images/test-small2-1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg4 {
+  background: url("../images/test-small2-2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg5 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg6 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg7 {
+  background: url("../images/test-medium3.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg8 {
+  background: url("../images/test-medium4.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg9 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg10 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg11 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg12 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg13 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg14 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg15 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg16 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg17 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg18 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg19 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg20 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+.teamDtImg21 {
+  background: url("../images/test-medium1.jpg") no-repeat;
+  background-size: cover;
+}
+.teamDtImg22 {
+  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background-size: cover;
+}
+/* ------------- /End Before After TEST DT Only ------------ */
 
 .card__title {
   margin-bottom: 2px;
