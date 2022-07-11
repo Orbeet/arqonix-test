@@ -65,9 +65,15 @@ h1 {
   background-image: url("../images/Work1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: 50% 0;
   /* background-color: #0f0821; */
 }
+@media (max-width: 450px) {
+  .wrapper {
+    background-image: url("../images/work-mob.jpg");
+  }
+}
+
 .page {
   /* position: relative; */
   /* z-index: -10; */
@@ -511,9 +517,9 @@ body._lock {
 }
 @media (max-width: 430px) {
   .section__inner {
-    background-image: url("../images/main-bg-mobile.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url("../images/main-bg-mobile.jpg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
   }
 }
 
