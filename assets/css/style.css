@@ -2014,9 +2014,12 @@ body._lock {
   -webkit-appearance: none;
   height: 223px;
   /* width: 2px; */
-  width: 20px;
+  width: 70px;
+  /* width: 100%; */
   background: none;
-  cursor: col-resize;
+  border: none;
+  outline: none;
+  /* cursor: col-resize; */
 }
 .drag-line {
   width: 2px;
