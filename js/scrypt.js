@@ -248,202 +248,105 @@ slider1.oninput = () => {
   img2.style.width = slider1Val + "%";
 };
 
-// ========================= Before After new1 ==================
-// const container = document.querySelector(".container1");
-// const slider = document.querySelector(".container1__slider");
-// const leftImage = document.querySelector(".container1__left-image");
-// const rightImage = document.querySelector(".container1__right-image");
+// ========================= Before After2 ==================
+const slider2 = document.querySelector(".slider2 input");
+const img4 = document.querySelector(".images .img-4");
+const dragLine2 = document.querySelector(".slider2 .drag-line");
+slider2.oninput = () => {
+  let slider2Val = slider2.value;
+  dragLine2.style.left = slider2Val + "%";
+  img4.style.width = slider2Val + "%";
+};
 
-// let clicked = false;
-// let xPosition;
+// ========================= Before After3 ==================
+const slider3 = document.querySelector(".slider3 input");
+const img6 = document.querySelector(".images .img-6");
+const dragLine3 = document.querySelector(".slider3 .drag-line");
+slider3.oninput = () => {
+  let slider3Val = slider3.value;
+  dragLine3.style.left = slider3Val + "%";
+  img6.style.width = slider3Val + "%";
+};
 
-// const sliderDragHandler = (event) => {
-//   xPosition = event.layerX;
-//   let containerSize = container.offsetWidth;
+// ========================= Before After4 ==================
+const slider4 = document.querySelector(".slider4 input");
+const img8 = document.querySelector(".images .img-8");
+const dragLine4 = document.querySelector(".slider4 .drag-line");
+slider4.oninput = () => {
+  let slider4Val = slider4.value;
+  dragLine4.style.left = slider4Val + "%";
+  img8.style.width = slider4Val + "%";
+};
 
-//   if (clicked) {
-//     leftImage.style.width = `${xPosition}px`;
-//     slider.style.left = `${xPosition}px`;
+// ========================= Before After5 ==================
+const slider5 = document.querySelector(".slider5 input");
+const img10 = document.querySelector(".images .img-10");
+const dragLine5 = document.querySelector(".slider5 .drag-line");
+slider5.oninput = () => {
+  let slider5Val = slider5.value;
+  dragLine5.style.left = slider5Val + "%";
+  img10.style.width = slider5Val + "%";
+};
 
-//     if (xPosition < 30) {
-//       leftImage.style.width = 0;
-//       slider.style.left = 0;
-//     }
+// ========================= Before After6 ==================
+const slider6 = document.querySelector(".slider6 input");
+const img12 = document.querySelector(".images .img-12");
+const dragLine6 = document.querySelector(".slider6 .drag-line");
+slider6.oninput = () => {
+  let slider6Val = slider6.value;
+  dragLine6.style.left = slider6Val + "%";
+  img12.style.width = slider6Val + "%";
+};
 
-//     if (xPosition + 30 > containerSize) {
-//       leftImage.style.width = `${containerSize}px`;
-//       slider.style.left = `${containerSize}px`;
-//     }
-//   }
-// };
+// ========================= Before After7 ==================
+const slider7 = document.querySelector(".slider7 input");
+const img14 = document.querySelector(".images .img-14");
+const dragLine7 = document.querySelector(".slider7 .drag-line");
+slider7.oninput = () => {
+  let slider7Val = slider7.value;
+  dragLine7.style.left = slider7Val + "%";
+  img14.style.width = slider7Val + "%";
+};
 
-// const sliderTouchStartHandler = (event) => {
-//   xPosition = event.touches[0].clientX;
-// };
+// ========================= Before After8 ==================
+const slider8 = document.querySelector(".slider8 input");
+const img16 = document.querySelector(".images .img-16");
+const dragLine8 = document.querySelector(".slider8 .drag-line");
+slider8.oninput = () => {
+  let slider8Val = slider8.value;
+  dragLine8.style.left = slider8Val + "%";
+  img16.style.width = slider8Val + "%";
+};
 
-// const sliderTouchMoveHandler = (event) => {
-//   let containerSize = container.offsetWidth;
-//   let touch = event.touches[0].clientX;
+// ========================= Before After9 ==================
+const slider9 = document.querySelector(".slider9 input");
+const img18 = document.querySelector(".images .img-18");
+const dragLine9 = document.querySelector(".slider9 .drag-line");
+slider9.oninput = () => {
+  let slider9Val = slider9.value;
+  dragLine9.style.left = slider9Val + "%";
+  img18.style.width = slider9Val + "%";
+};
 
-//   leftImage.style.width = `${touch}px`;
-//   slider.style.left = `${touch}px`;
+// ========================= Before After10 ==================
+const slider10 = document.querySelector(".slider10 input");
+const img20 = document.querySelector(".images .img-20");
+const dragLine10 = document.querySelector(".slider10 .drag-line");
+slider10.oninput = () => {
+  let slider10Val = slider10.value;
+  dragLine10.style.left = slider10Val + "%";
+  img20.style.width = slider10Val + "%";
+};
 
-//   if (touch < 10) {
-//     leftImage.style.width = 0;
-//     slider.style.left = "2px";
-//   }
-//   if (touch + 10 > containerSize) {
-//     leftImage.style.width = `${containerSize}px`;
-//     slider.style.left = `${containerSize - 2}px`;
-//   }
-//   event.preventDefault();
-// };
-
-/* desktop events */
-// container.addEventListener("mousedown", () => (clicked = true));
-// container.addEventListener("mouseup", () => (clicked = false));
-// container.addEventListener("mousemove", sliderDragHandler);
-
-/* mobile events */
-// container.addEventListener("touchstart", sliderTouchStartHandler);
-// container.addEventListener("touchmove", sliderTouchMoveHandler);
-
-// ========================= Before After new2 ==================
-// const slider = document.querySelector(".slider__one");
-// const before = slider.querySelector(".before");
-// const beforeImage = before.querySelector("img");
-// const change = slider.querySelector(".change");
-// let isActive = false;
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   let width = slider.offsetWidth;
-//   beforeImage.style.width = `${width}px`;
-// });
-
-// const beforeAfterSlider = (x) => {
-//   let shift = Math.max(0, Math.min(x, slider.offsetWidth));
-//   before.style.width = `${shift}px`;
-//   change.style.left = `${shift}px`;
-// };
-
-// const pauseEvents = (e) => {
-//   e.stopPropagation();
-//   e.preventDefault();
-//   return false;
-// };
-
-// document.body.addEventListener("mousedown", () => {
-//   isActive = true;
-// });
-
-// document.body.addEventListener("mouseup", () => {
-//   isActive = false;
-// });
-
-// document.body.addEventListener("mouseleave", () => {
-//   isActive = false;
-// });
-
-// document.body.addEventListener("mousemove", (e) => {
-//   if (!isActive) {
-//     return;
-//   }
-
-//   let x = e.pageX;
-
-//   x -= slider.getBoundingClientRect().left;
-//   beforeAfterSlider(x);
-//   pauseEvents(e);
-// });
-
-// document.body.addEventListener("touchstart", () => {
-//   isActive = true;
-// });
-
-// document.body.addEventListener("touchend", () => {
-//   isActive = false;
-// });
-
-// document.body.addEventListener("touchcancel", () => {
-//   isActive = false;
-// });
-
-// document.body.addEventListener("touchmove", (e) => {
-//   if (!isActive) {
-//     return;
-//   }
-
-//   let x;
-//   let i;
-
-//   for (i = 0; e < e.changedTouches.length; i++) {
-//     x = e.changedTouches[i].pageX;
-//   }
-
-//   x -= slider.getBoundingClientRect().left;
-//   beforeAfterSlider(x);
-//   pauseEvents(e);
-// });
-
-// ========================= Before After TEST777 ==================
-// const container = document.querySelector(".container777");
-// const slider = document.querySelector(".container__slider");
-// const leftImage = document.querySelector(".container__left-image");
-// const rightImage = document.querySelector(".container__right-image");
-
-// let clicked = false;
-// let xPosition;
-
-// const sliderDragHandler = (event) => {
-//   xPosition = event.layerX;
-//   let containerSize = container.offsetWidth;
-
-//   if (clicked) {
-//     leftImage.style.width = `${xPosition}px`;
-//     slider.style.left = `${xPosition}px`;
-
-//     if (xPosition < 30) {
-//       leftImage.style.width = 0;
-//       slider.style.left = 0;
-//     }
-
-//     if (xPosition + 30 > containerSize) {
-//       leftImage.style.width = `${containerSize}px`;
-//       slider.style.left = `${containerSize}px`;
-//     }
-//   }
-// };
-
-// const sliderTouchStartHandler = (event) => {
-//   xPosition = event.touches[0].clientX;
-// };
-
-// const sliderTouchMoveHandler = (event) => {
-//   let containerSize = container.offsetWidth;
-//   let touch = event.touches[0].clientX;
-
-//   leftImage.style.width = `${touch}px`;
-//   slider.style.left = `${touch}px`;
-
-//   if (touch < 10) {
-//     leftImage.style.width = 0;
-//     slider.style.left = "2px";
-//   }
-//   if (touch + 10 > containerSize) {
-//     leftImage.style.width = `${containerSize}px`;
-//     slider.style.left = `${containerSize - 2}px`;
-//   }
-//   event.preventDefault();
-// };
-
-/* desktop events */
-// container.addEventListener("mousedown", () => (clicked = true));
-// container.addEventListener("mouseup", () => (clicked = false));
-// container.addEventListener("mousemove", sliderDragHandler);
-
-/* mobile events */
-// container.addEventListener("touchstart", sliderTouchStartHandler);
-// container.addEventListener("touchmove", sliderTouchMoveHandler);
+// ========================= Before After11 ==================
+const slider11 = document.querySelector(".slider11 input");
+const img22 = document.querySelector(".images .img-22");
+const dragLine11 = document.querySelector(".slider11 .drag-line");
+slider11.oninput = () => {
+  let slider11Val = slider11.value;
+  dragLine11.style.left = slider11Val + "%";
+  img22.style.width = slider11Val + "%";
+};
 
 // ========================= Before After TEST DT Only ==================
 $(".code-wrapper").on("mousemove", function (e) {
@@ -488,69 +391,3 @@ $(".divider-wrapper").on("mouseleave", function () {
     transition: "all .3s",
   });
 });
-
-// ========================= Before After Mobile Only ==================
-// function initComparsions() {
-//   var x, i;
-//   x = document.getElementsByClassName("img-comp-overlay");
-//   for (i = 0; i < x.length; i++) {
-//     compareImages(x[i]);
-//   }
-
-//   function compareImages(img) {
-//     var slider,
-//       img,
-//       clicked = 0,
-//       w,
-//       h;
-//     w = img.offsetWidth;
-//     h = img.offsetHeight;
-//     img.style.width = w / 2 + "px";
-//     slider = document.createElement("DIV");
-//     slider.setAttribute("class", "img-comp-slider");
-//     img.parentElement.insertBefore(slider, img);
-//     slider.style.top = h / 2 - slider.offsetHeight / 2 + "px";
-//     slider.style.left = w / 2 - slider.offsetWidth / 2 + "px";
-//     slider.addEventListener("mousedown", slideReady);
-//     window.addEventListener("mouseup", slideFinish);
-//     slider.addEventListener("touchstart", slideReady);
-//     window.addEventListener("touchendd", slideFinish);
-
-//     function slideReady(e) {
-//       e.preventDefault();
-//       clicked = 1;
-//       window.addEventListener("mousemove", slideMove);
-//       window.addEventListener("touchmove", slideMove);
-//     }
-
-//     function slideFinish() {
-//       clicked = 0;
-//     }
-
-//     function slideMove(e) {
-//       var pos;
-//       if (clicked == 0) return false;
-//       pos = getCursorPos(e);
-//       if (poss < 0) pos = 0;
-//       if (pos > w) pos = w;
-//       slide(pos);
-//     }
-
-//     function getCursorPos(e) {
-//       var a,
-//         x = 0;
-//       e = e.changedTouches ? e.changedTouches[0] : e;
-//       a = img.getBoundingClientRect();
-//       x = e.pageX - a.left;
-//       x = x - window.pageXOffset;
-//       return x;
-//     }
-
-//     function slide(x) {
-//       img.style.width = x + "px";
-//       slider.style.left = img.offsetWidth - slider.offsetWidth / 2 + "px";
-//     }
-//   }
-// }
-
-// ========================= Before After Mobile1 Only ==================
