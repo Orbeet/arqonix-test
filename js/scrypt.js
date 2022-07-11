@@ -386,64 +386,64 @@ slider1.oninput = () => {
 // });
 
 // ========================= Before After TEST777 ==================
-const container = document.querySelector(".container777");
-const slider = document.querySelector(".container__slider");
-const leftImage = document.querySelector(".container__left-image");
-const rightImage = document.querySelector(".container__right-image");
+// const container = document.querySelector(".container777");
+// const slider = document.querySelector(".container__slider");
+// const leftImage = document.querySelector(".container__left-image");
+// const rightImage = document.querySelector(".container__right-image");
 
-let clicked = false;
-let xPosition;
+// let clicked = false;
+// let xPosition;
 
-const sliderDragHandler = (event) => {
-  xPosition = event.layerX;
-  let containerSize = container.offsetWidth;
+// const sliderDragHandler = (event) => {
+//   xPosition = event.layerX;
+//   let containerSize = container.offsetWidth;
 
-  if (clicked) {
-    leftImage.style.width = `${xPosition}px`;
-    slider.style.left = `${xPosition}px`;
+//   if (clicked) {
+//     leftImage.style.width = `${xPosition}px`;
+//     slider.style.left = `${xPosition}px`;
 
-    if (xPosition < 30) {
-      leftImage.style.width = 0;
-      slider.style.left = 0;
-    }
+//     if (xPosition < 30) {
+//       leftImage.style.width = 0;
+//       slider.style.left = 0;
+//     }
 
-    if (xPosition + 30 > containerSize) {
-      leftImage.style.width = `${containerSize}px`;
-      slider.style.left = `${containerSize}px`;
-    }
-  }
-};
+//     if (xPosition + 30 > containerSize) {
+//       leftImage.style.width = `${containerSize}px`;
+//       slider.style.left = `${containerSize}px`;
+//     }
+//   }
+// };
 
-const sliderTouchStartHandler = (event) => {
-  xPosition = event.touches[0].clientX;
-};
+// const sliderTouchStartHandler = (event) => {
+//   xPosition = event.touches[0].clientX;
+// };
 
-const sliderTouchMoveHandler = (event) => {
-  let containerSize = container.offsetWidth;
-  let touch = event.touches[0].clientX;
+// const sliderTouchMoveHandler = (event) => {
+//   let containerSize = container.offsetWidth;
+//   let touch = event.touches[0].clientX;
 
-  leftImage.style.width = `${touch}px`;
-  slider.style.left = `${touch}px`;
+//   leftImage.style.width = `${touch}px`;
+//   slider.style.left = `${touch}px`;
 
-  if (touch < 10) {
-    leftImage.style.width = 0;
-    slider.style.left = "2px";
-  }
-  if (touch + 10 > containerSize) {
-    leftImage.style.width = `${containerSize}px`;
-    slider.style.left = `${containerSize - 2}px`;
-  }
-  event.preventDefault();
-};
+//   if (touch < 10) {
+//     leftImage.style.width = 0;
+//     slider.style.left = "2px";
+//   }
+//   if (touch + 10 > containerSize) {
+//     leftImage.style.width = `${containerSize}px`;
+//     slider.style.left = `${containerSize - 2}px`;
+//   }
+//   event.preventDefault();
+// };
 
 /* desktop events */
-container.addEventListener("mousedown", () => (clicked = true));
-container.addEventListener("mouseup", () => (clicked = false));
-container.addEventListener("mousemove", sliderDragHandler);
+// container.addEventListener("mousedown", () => (clicked = true));
+// container.addEventListener("mouseup", () => (clicked = false));
+// container.addEventListener("mousemove", sliderDragHandler);
 
 /* mobile events */
-container.addEventListener("touchstart", sliderTouchStartHandler);
-container.addEventListener("touchmove", sliderTouchMoveHandler);
+// container.addEventListener("touchstart", sliderTouchStartHandler);
+// container.addEventListener("touchmove", sliderTouchMoveHandler);
 
 // ========================= Before After TEST DT Only ==================
 $(".code-wrapper").on("mousemove", function (e) {
@@ -488,3 +488,50 @@ $(".divider-wrapper").on("mouseleave", function () {
     transition: "all .3s",
   });
 });
+
+// ========================= Before After Mobile Only ==================
+function initComparsions() {
+  var x, i;
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    compareImages(x[i]);
+  }
+
+  function compareImages(img) {
+    var slider,
+      img,
+      clicked = 0,
+      w,
+      h;
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    img.style.width = w / 2 + "px";
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    img.parentElement.insertBefore(slider, img);
+    slider.style.top = h / 2 - slider.offsetHeight / 2 + "px";
+    slider.style.left = w / 2 - slider.offsetWidth / 2 + "px";
+    slider.addEventListener("mousedown", slideReady);
+    window.addEventListener("mouseup", slideFinish);
+    slider.addEventListener("touchstart", slideReady);
+    window.addEventListener("touchendd", slideFinish);
+
+    function slideReady(e) {
+      e.preventDefault();
+      clicked = 1;
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+
+    function slideFinish() {
+      clicked = 0;
+    }
+
+    function slideMove(e) {
+      var pos;
+      if (clicked == 0) return false;
+      pos = getCursorPos(e);
+      if (poss < 0) pos = 0;
+    }
+  }
+}

@@ -61,10 +61,11 @@ h1 {
   /* position: relative; */
   /* z-index: 6; */
   min-height: 100%;
-  /* background-image: url("../images/bg-particles.png");
+  /* background-image: url("../images/bg-particles.png"); */
+  background-image: url("../images/Work1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; */
+  /* background-position: center; */
   /* background-color: #0f0821; */
 }
 .page {
@@ -556,10 +557,10 @@ body._lock {
   min-height: 100vh;
 }
 .section__inner {
-  background-image: url("../images/main-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-image: url("../images/bg-1.jpg"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
 }
 
 .main__title-inner {
@@ -624,9 +625,24 @@ body._lock {
 }
 .collection__section {
   padding-top: 100px;
+  /* background-image: url("../images/bg-2.jpg"); */
+  /* width: 100vw; */
+  /* height: 100%; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+}
+.collection__section2 {
+  padding-top: 100px;
+  /* background-image: url("../images/bg-3.jpg"); */
+  /* width: 100vw; */
+  /* height: 100%; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
 }
 .bg {
-  background-color: #190a32;
+  /* background-color: #190a32; */
   /* background-color: #a28dc4; */
   /* background-color: rgb(52, 201, 224); */
 }
@@ -2209,13 +2225,14 @@ body._lock {
   -webkit-box-direction: normal;
   -ms-flex-flow: row;
   flex-flow: row;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 157px;
   max-width: 100%;
-  height: 280px;
-  margin: 0 auto;
+  height: 157px;
+  /* margin: 0 auto; */
   background-color: turquoise;
-  -webkit-box-shadow: 0px 16px 32px rgba(34, 34, 34, 0.15);
-  box-shadow: 0px 16px 32px rgba(34, 34, 34, 0.15);
+  /* -webkit-box-shadow: 0px 16px 32px rgba(34, 34, 34, 0.15);
+  box-shadow: 0px 16px 32px rgba(34, 34, 34, 0.15); */
   overflow-x: hidden;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -2226,18 +2243,18 @@ body._lock {
   user-select: none;
 }
 .container777 {
-  display: none;
+  /* display: none; */
 }
 @media (min-width: 768px) {
   .container777 {
-    height: 360px;
-    width: 80vw;
+    /* height: 360px; */
+    /* width: 80vw; */
   }
 }
 
 @media (min-width: 1024px) {
   .container777 {
-    height: 800px;
+    /* height: 800px; */
   }
 }
 
@@ -2266,52 +2283,63 @@ body._lock {
 .container__left-image,
 .container__right-image {
   position: absolute;
-  width: 100vw;
-  height: 100%;
+  /* width: 100vw; */
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 157px;
+  height: 157px;
 }
 
 @media (min-width: 768px) {
   .container__left-image,
   .container__right-image {
-    width: 80vw;
+    /* width: 80vw; */
   }
 }
 
 .container__left-image {
-  width: 50vw;
-  max-width: 100vw;
+  /* width: 50vw; */
+  width: 78.5px;
+  /* width: 157px; */
+  /* width: 50%; */
+  /* max-width: 100vw; */
+  max-width: 157px;
   overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .container__left-image {
-    width: 40vw;
+    /* width: 40vw; */
   }
 }
 
 .left-image {
-  width: 100vw;
-  height: 100%;
+  /* width: 100vw; */
+  width: 157px;
+  /* height: 100%; */
+  height: 157px;
   background-image: url("https://images.unsplash.com/photo-1613493565040-28dac4e83cc4?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNTQ1Mjc2NQ&ixlib=rb-1.2.1&q=85");
   background-size: 100% 100%;
 }
 
 @media (min-width: 768px) {
   .left-image {
-    width: 80vw;
+    /* width: 80vw; */
   }
 }
 
 .right-image {
-  width: 100vw;
-  height: 100%;
+  /* width: 100vw; */
+  width: 157px;
+  /* height: 100%; */
+  height: 157px;
   background-image: url("https://images.unsplash.com/photo-1613327986042-63d4425a1a5d?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNTQ1Mjc2NQ&ixlib=rb-1.2.1&q=85");
   background-size: 100% 100%;
 }
 
 @media (min-width: 768px) {
   .right-image {
-    width: 80vw;
+    /* width: 80vw; */
   }
 }
 
@@ -2378,13 +2406,6 @@ body._lock {
   /* background: url("../images/test-small2-1.jpg") no-repeat; */
   background-size: cover;
 }
-.teamDtImg1 {
-  /* display: block; */
-  /* width: 100%; */
-  /* height: 100%; */
-  background: url("../images/test-small2-3.jpg") no-repeat;
-  background-size: cover;
-}
 
 .design-wrapper,
 .design-image {
@@ -2414,6 +2435,10 @@ body._lock {
   transform: translateX(-50%);
 
   /* background: url("../images/test-small2-2.jpg") no-repeat bottom right; */
+  background-size: cover;
+}
+.teamDtImg1 {
+  background: url("../images/test-small2-3.jpg") no-repeat;
   background-size: cover;
 }
 .teamDtImg2 {
@@ -2477,11 +2502,11 @@ body._lock {
   background-size: cover;
 }
 .teamDtImg17 {
-  background: url("../images/test-medium1.jpg") no-repeat;
+  background: url("../images/test-medium2.jpg") no-repeat;
   background-size: cover;
 }
 .teamDtImg18 {
-  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background: url("../images/test-medium4.jpg") no-repeat bottom right;
   background-size: cover;
 }
 .teamDtImg19 {
@@ -2493,14 +2518,33 @@ body._lock {
   background-size: cover;
 }
 .teamDtImg21 {
-  background: url("../images/test-medium1.jpg") no-repeat;
+  background: url("../images/test-medium4.jpg") no-repeat;
   background-size: cover;
 }
 .teamDtImg22 {
-  background: url("../images/test-medium2.jpg") no-repeat bottom right;
+  background: url("../images/test-medium3.jpg") no-repeat bottom right;
   background-size: cover;
 }
 /* ------------- /End Before After TEST DT Only ------------ */
+
+/* ------------- Before After Mobile Only ------------ */
+.img-comp-container {
+  position: relative;
+  width: 157px;
+  height: 157px;
+}
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.img-comp-img img {
+  display: block;
+}
+.img-comp-overlay {
+}
+/* ------------- /End Before After Mobile Only ------------ */
 
 .card__title {
   margin-bottom: 2px;
