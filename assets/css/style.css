@@ -47,6 +47,11 @@ body {
     sans-serif; */
   font-family: "Montserrat", sans-serif;
 }
+
+body.lock {
+  overflow: hidden;
+}
+
 h1 {
   font-family: "Russo One", sans-serif;
 }
@@ -1723,7 +1728,7 @@ body._lock {
   }
 }
 
-/* ================= Partners Modal =============== */
+/* ================= Partners Modal ONE =============== */
 .modal {
   --transition-time: 0.3s;
   position: fixed;
@@ -1800,7 +1805,7 @@ body._lock {
 }
 
 *:focus {
-  outline: 3px red solid;
+  /* outline: 3px red solid; */
 }
 
 .content {
@@ -1816,7 +1821,59 @@ body._lock {
   top: 0;
   width: 100%;
 }
-/* ================= /End Partners Modal =============== */
+/* ================= /End Partners Modal ONE =============== */
+
+/* ================= Partners Modal TWO =============== */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup__content {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup__content {
+  background: linear-gradient(112.29deg, #17234e 0%, #24063c 100%), #d9d9d9;
+  border-radius: 32px;
+  max-width: 1440px;
+  padding: 32px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.popup__clise {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+}
+.popup__title {
+}
+.popup__text {
+}
+/* ================= /End Partners Modal TWO =============== */
 
 /* ================= Partners Slider =============== */
 /* Слайдер */
