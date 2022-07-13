@@ -1977,6 +1977,7 @@ body._lock {
     width: 323px;
     padding: 24px;
     border-radius: 28px 0px 0px 28px;
+    transform: translateX(100%);
   }
   .popup__header {
     flex-direction: column;
@@ -2017,8 +2018,11 @@ body._lock {
     transform: translateY(-50%);
   }
   .popup__text {
-    height: 380px;
+    height: 355px;
     overflow: scroll;
+  }
+  .popup.open .popup__content {
+    transform: translateX(0px);
   }
 }
 /* ================= /End Partners Modal TWO =============== */
