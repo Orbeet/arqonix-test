@@ -1971,7 +1971,7 @@ body._lock {
 @media (max-width: 967px) {
   .popup__body {
     padding: 0px 0px 10px 50px;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .popup__content {
     width: 323px;
