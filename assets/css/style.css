@@ -138,6 +138,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.3s ease 0s;
 }
 .menu__icon {
   display: none;
@@ -357,6 +358,11 @@ body._lock {
     width: 100%;
     background-color: none;
   }
+  .header__menu._active {
+    /* height: 100vh; */
+    /* background-color: red; */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+  }
   .page__text p {
     font-size: 23px;
     padding: 0px 8px 15px 8px;
@@ -471,6 +477,7 @@ body._lock {
     max-width: 330px;
     width: 100%;
     /* min-height: 667px; */
+    /* min-height: 580px; */
     min-height: 580px;
     height: 100%;
     /* transform: translate(100%, 0px); */
@@ -1962,6 +1969,9 @@ body._lock {
   line-height: 100%;
   color: #c7b7e2;
 }
+.popup__content-shadow {
+  display: none;
+}
 /* -------------------- @Media Modal ---------------------- */
 @media (max-width: 1680px) {
   .popup__content {
@@ -1978,6 +1988,17 @@ body._lock {
     padding: 24px;
     border-radius: 28px 0px 0px 28px;
     transform: translateX(100%);
+  }
+  .popup__content-shadow {
+    display: block;
+    width: 323px;
+    height: 136px;
+    /* background-color: green; */
+    background: linear-gradient(0deg, #24063c 16%, rgba(36, 6, 60, 0) 100%);
+    position: absolute;
+    border-radius: 0px 0px 0px 28px;
+    left: 0;
+    bottom: 0;
   }
   .popup__header {
     flex-direction: column;
@@ -2018,7 +2039,7 @@ body._lock {
     transform: translateY(-50%);
   }
   .popup__text {
-    height: 355px;
+    height: 340px;
     overflow: scroll;
   }
   .popup.open .popup__content {
