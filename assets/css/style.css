@@ -1969,6 +1969,19 @@ body._lock {
   line-height: 100%;
   color: #c7b7e2;
 }
+.popup__text::-webkit-scrollbar {
+  width: 6px;
+}
+.popup__text::-webkit-scrollbar-track {
+  background: #120726;
+  border-radius: 25px;
+  /* margin-block: 0.5em; */
+}
+.popup__text::-webkit-scrollbar-thumb {
+  background: #6a30e3;
+  border-radius: 25px;
+  width: 8px;
+}
 .popup__content-shadow {
   display: none;
 }
@@ -2040,7 +2053,7 @@ body._lock {
   }
   .popup__text {
     height: 340px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .popup.open .popup__content {
     transform: translateX(0px);
