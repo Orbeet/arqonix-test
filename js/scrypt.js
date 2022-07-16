@@ -183,7 +183,7 @@ $(document).ready(function () {
 
   // ---------- collection1Top__sliderInside2 -----------
   $(".collection1Top__sliderInside-2").slick({
-    initialSlide: 2,
+    // initialSlide: 2,
     infinite: false,
     // appendArrows: $(".sliderInside"),
     // infinite: false,
