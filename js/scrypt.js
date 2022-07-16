@@ -699,7 +699,7 @@ document.addEventListener("keydown", function (e) {
   }
 })();
 
-new SimpleBar(document.getElementById("popupText"), {
-  autoHide: false,
-  scrollbarMinSize: 100,
-});
+// new SimpleBar(document.getElementById("popupText"), {
+//   autoHide: false,
+//   scrollbarMinSize: 70,
+// });
