@@ -698,3 +698,8 @@ document.addEventListener("keydown", function (e) {
       Element.prototype.msMatchesSelector;
   }
 })();
+
+new SimpleBar(document.getElementById("popupText"), {
+  autoHide: false,
+  scrollbarMinSize: 100,
+});
