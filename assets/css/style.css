@@ -67,7 +67,8 @@ h1 {
   /* z-index: 6; */
   min-height: 100%;
   /* background-image: url("../images/bg-particles.png"); */
-  background-image: url("../images/Work1.jpg");
+  /* background-image: url("../images/Work1.jpg"); */
+  background-image: url("../images/Work1-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -75,7 +76,8 @@ h1 {
 }
 @media (max-width: 450px) {
   .wrapper {
-    background-image: url("../images/work-mob.jpg");
+    /* background-image: url("../images/work-mob.jpg"); */
+    background-image: url("../images/work-mob-min.jpg");
   }
 }
 
@@ -1456,6 +1458,7 @@ body._lock {
 }
 .creation2__imgBig img {
   max-width: 100%;
+  max-height: 100%;
   border-radius: 4%;
   object-fit: cover;
 }
@@ -1499,6 +1502,7 @@ body._lock {
 }
 .creation2__smallImg img {
   max-width: 100%;
+  max-height: 100%;
   border-radius: 7%;
   object-fit: cover;
 }
@@ -1713,19 +1717,21 @@ body._lock {
   justify-content: center;
 }
 .partners__img {
-  width: 262.4px;
+  /* width: 262.4px; */
+  width: 262px;
   height: 184px;
   border-radius: 16px;
-  background-image: url("../images/test-smal1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url("../images/test-smal1.jpg"); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 }
 .partners__img img {
   width: 100%;
   height: 100%;
   border-radius: 16px;
   cursor: pointer;
+  object-fit: cover;
 }
 .partners__card {
   margin-right: 32px;
@@ -2002,6 +2008,7 @@ body._lock {
   font-size: 20px;
   line-height: 100%;
   color: #c7b7e2;
+  padding: 2px;
 }
 
 .popup__content-shadow {
@@ -2088,6 +2095,7 @@ body._lock {
     width: 6px;
   }
   .simplebar-content-wrapper {
+    /* padding: 1px; */
     padding-right: 10px;
   }
   .simplebar-scrollbar:before {
@@ -2243,6 +2251,7 @@ body._lock {
   width: 224px;
   height: 157px;
   border-radius: 16px;
+  object-fit: cover;
 }
 /* ================= /End Partners Slider =============== */
 /* ==================== /End Partners ======================= */
