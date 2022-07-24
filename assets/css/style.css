@@ -2583,9 +2583,12 @@ body._lock {
 .slider10 input::-webkit-slider-thumb,
 .slider11 input::-webkit-slider-thumb {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   height: 157px;
   /* width: 2px; */
-  width: 70px;
+  /* width: 70px; */
+  width: 100px;
   /* width: 100%; */
   background: none;
   border: none;
