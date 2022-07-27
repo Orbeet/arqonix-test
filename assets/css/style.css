@@ -897,12 +897,15 @@ body._lock {
   align-content: space-between;
   height: 434px;
 }
+
 .collection1Top__video {
   /* border-radius: 20px; */
   border-radius: clamp(12px, 1.4vw, 20px);
   width: 953px;
   height: 434px;
   margin-right: 20px;
+  /* background-color: #fff; */
+  overflow: hidden;
 }
 .collection1Top__video-2 {
   /* border-radius: clamp(12px, 1.4vw, 20px);
@@ -913,15 +916,70 @@ body._lock {
 }
 .collection1Top__video img {
   /* border-radius: 20px; */
-  border-radius: clamp(12px, 1.4vw, 20px);
-  width: 953px;
-  height: 434px;
+  /* border-radius: clamp(12px, 1.4vw, 20px); */
+  /* width: 953px; */
+  /* height: 434px; */
+}
+.videoDt-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* height: 0; */
+  /* padding-bottom: 56.25%; */
+  background-color: #000000;
+}
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(32px);
+  filter: drop-shadow(0px 31px 43px rgba(0, 0, 0, 0.31))
+    drop-shadow(0px 11.9407px 13.6963px rgba(0, 0, 0, 0.188296))
+    drop-shadow(0px 2.52593px 3.5037px rgba(0, 0, 0, 0.121704));
+  transition: all 0.6s ease 0s;
+  display: none;
+}
+.video__button svg {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+}
+.videoDt-1:hover .video__button,
+.video__button:focus .video__button {
+  background: rgba(255, 255, 255, 0.075);
+}
+.video--enabled {
+  cursor: pointer;
+}
+.video--enabled .video__button {
+  display: block;
 }
 .collection1Top__collection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  width: 467px;
+  height: 434px;
 }
 .collection1Top__collectionItem {
   border-radius: 16px;
@@ -985,6 +1043,17 @@ body._lock {
   .collection1Top__video img {
     border-radius: calc(12px + (20 - 12) * ((100vw - 375px) / (1680 - 375)));
     width: calc(209px + (953 - 209) * ((100vw - 375px) / (1680 - 375)));
+    height: calc(97px + (434 - 97) * ((100vw - 375px) / (1680 - 375)));
+  }
+  .video__button {
+    width: calc(40px + (140 - 40) * ((100vw - 375px) / (1680 - 375)));
+    height: calc(40px + (140 - 40) * ((100vw - 375px) / (1680 - 375)));
+  }
+  .video__button svg {
+    width: calc(10px + (40 - 10) * ((100vw - 375px) / (1680 - 375)));
+  }
+  .collection1Top__collection {
+    width: calc(111px + (467 - 111) * ((100vw - 375px) / (1680 - 375)));
     height: calc(97px + (434 - 97) * ((100vw - 375px) / (1680 - 375)));
   }
   .collection1Top__collectionItem {
@@ -1055,6 +1124,14 @@ body._lock {
     width: clamp(327px, 86vw, 831px);
     /* height: 377px; */
     height: clamp(172px, 45.2vw, 437px);
+  }
+  .video__button {
+    width: clamp(52px, 13.6vw, 132px);
+    height: clamp(52px, 13.6vw, 132px);
+  }
+  .video__button svg {
+    width: clamp(14.86px, 3.9vw, 38px);
+    /* width: calc(10px + (40 - 10) * ((100vw - 375px) / (968 - 375))); */
   }
   .collection1Top__collectionItem {
     /* width: 265px; */
@@ -2469,75 +2546,97 @@ body._lock {
   /* border-radius: 16px; */
   /* width: 100%; */
   /* height: 100%; */
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
   background-size: cover;
 }
 .img-2 {
   /* position: absolute; */
   /* width: 50%; */
   /* height: 100%; */
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
   background-size: cover;
 }
 .img-3 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-4 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-5 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-6 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-7 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-8 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-9 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-10 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-11 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-12 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-13 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-14 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-15 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-16 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-17 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-18 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-19 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-20 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .img-21 {
-  background: url("../images/test-small2-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small2-1@1x.webp") no-repeat;
 }
 .img-22 {
-  background: url("../images/test-small0-1@1x.jpg") no-repeat;
+  /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
+  background: url("../images/test-small0-1@1x.webp") no-repeat;
 }
 .slider1,
 .slider2,
@@ -2685,6 +2784,10 @@ body._lock {
   /* background: url("../images/test-small2-1.jpg") no-repeat; */
   /* background-size: cover; */
   object-fit: cover;
+}
+.code-wrapper img {
+  width: 100%;
+  height: 100%;
 }
 
 .design-wrapper,
