@@ -973,6 +973,17 @@ body._lock {
 .video--enabled .video__button {
   display: block;
 }
+.videoDt-2 {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+.video__item {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  object-fit: contain;
+}
 .collection1Top__collection {
   display: flex;
   flex-wrap: wrap;
