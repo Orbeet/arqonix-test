@@ -754,6 +754,46 @@ function generateURL(id) {
 
 findVideos();
 
+// ======= Initialize Swiper ==========
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  longSwipesRatio: 0.1,
+  // edgeSwipeThreshold: 0.9,
+  // touchRatio: 0.9,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    // dynamicBullets: true,
+    grabCursor: true,
+  },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  direction: "vertical",
+  spaceBetween: 30,
+  longSwipesRatio: 0.1,
+  // edgeSwipeThreshold: 0.9,
+  // touchRatio: 0.9,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    // dynamicBullets: true,
+    grabCursor: true,
+  },
+});
+var swiper3 = new Swiper(".mySwiper3", {
+  direction: "vertical",
+  spaceBetween: 30,
+  longSwipesRatio: 0.1,
+  // edgeSwipeThreshold: 0.9,
+  // touchRatio: 0.9,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    // dynamicBullets: true,
+    grabCursor: true,
+  },
+});
+
 // ====== Animations =======
 // const animItems = document.querySelectorAll("._anim-items");
 
