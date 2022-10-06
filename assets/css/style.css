@@ -1370,6 +1370,7 @@ body._lock {
 
 /* ==================== Swiper1 ======================= */
 .swiper1__inner {
+  display: none;
   width: 100%;
   /* height: 515px; */
   /* height: 325px; */
@@ -1541,9 +1542,15 @@ body._lock {
   /* background-color: brown; */
   margin: 0 auto;
 }
+.swiper-slide__1 .insideSwiper__inner-img {
+  width: 680px;
+}
 .insideSwiper__slide-content {
   width: 836px;
   height: 470px;
+}
+.insideSwiper__slide .insideSwiper__slide-content-img {
+  width: 470px;
 }
 .insideSwiper__slide-content img {
   object-fit: fill;
