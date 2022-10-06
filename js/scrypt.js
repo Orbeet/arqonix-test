@@ -754,8 +754,8 @@ function generateURL(id) {
 
 findVideos();
 
-// ======= Initialize Swiper ==========
-var swiper = new Swiper(".mySwiper", {
+// ======= Initialize Swiper-test ==========
+var swiper1 = new Swiper(".mySwiper", {
   spaceBetween: 30,
   longSwipesRatio: 0.1,
   // edgeSwipeThreshold: 0.9,
@@ -792,6 +792,39 @@ var swiper3 = new Swiper(".mySwiper3", {
     // dynamicBullets: true,
     grabCursor: true,
   },
+});
+
+// ======= Initialize Swiper ==========
+new Swiper(".parent-slider", {
+  // loop: true,
+  slidesPerView: 1,
+  // noSwiping: true,
+  // centeredSlides: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination-parent",
+    clickable: true,
+    // dynamicBullets: true,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+});
+
+new Swiper(".child-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  simulateTouch: false,
+  noSwiping: false,
+  allowTouchMove: false,
+  // pagination: ".swiper-pagination-child",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  nested: true,
 });
 
 // ====== Animations =======
