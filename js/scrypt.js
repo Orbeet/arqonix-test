@@ -150,7 +150,76 @@ $(document).ready(function () {
     nextArrow:
       "<div class='arrow__next'><div class='arrow__next-svg'></div></div>",
   });
-  // -----------------------------------------------------------------------
+  // ------------ /End Creation2 ------------
+
+  // ------------ PROMOTIONAL sliders -----------------
+  // ------- Promotional Top Slider ---------
+  $(".promotionalTop__slider").slick({
+    asNavFor: ".promotionalBottom__slider",
+    slidesToShow: 1,
+    fade: true,
+    draggable: false,
+    swipe: false,
+    arrows: false,
+  });
+  // ------ /End Promotional Top Slider ------
+
+  // ------ Promotional Bottom Slider ------
+  $(".promotionalBottom__slider").slick({
+    centerMode: true,
+    variableWidth: true,
+    asNavFor: ".promotionalTop__slider",
+    prevArrow:
+      "<div class='arrow__prev-bottom'><div class='arrow__prev-svg-bottom'></div></div>",
+    nextArrow:
+      "<div class='arrow__next-bottom'><div class='arrow__next-svg-bottom'></div></div>",
+  });
+  // ------ /End Promotional Bottom Slider ------
+
+  // ------ Promotional Top Small-Slider ------
+  let promoSmall = new Swiper(".promotional__smallSlider", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    direction: "vertical",
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Promotional Top Small-Slider ------
+
+  // ------ Promotional Top Big-Slider ------
+  let promoBig = new Swiper(".promotional__bigSlider", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // direction: "vertical",
+    thumbs: {
+      swiper: promoSmall,
+    },
+  });
+  // promoBig.on("slideChangeTransitionStart", function () {
+  //   promoSmall.slideTo(promoBig.activeIndex);
+  // });
+  // promoSmall.on("transitionStart", function () {
+  //   promoBig.slideTo(promoSmall.activeIndex);
+  // });
+  // ------ /End Promotional Top Big-Slider ------
+  // ------------ /End PROMOTIONAL sliders ------------
 
   // ---------- collection1Top__slider1 -----------
   $(".collection1Top__slider").slick({
@@ -812,6 +881,7 @@ new Swiper(".parent-slider", {
   // },
 });
 
+// ----- Test1 ----------
 new Swiper(".child-slider", {
   loop: true,
   slidesPerView: 1,
@@ -826,6 +896,35 @@ new Swiper(".child-slider", {
   },
   nested: true,
 });
+
+let galleryThumbs = new Swiper(".gallery-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  loop: true,
+  freeMode: true,
+  loopedSlides: 5, //looped slides should be the same
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  direction: "vertical",
+});
+let galleryTop = new Swiper(".gallery-top", {
+  spaceBetween: 10,
+  loop: true,
+  loopedSlides: 5, //looped slides should be the same,
+  direction: "vertical",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+// --------  /End Test1 -------------------
+
+// ------------- Final Swiper ---------------
+
+// ------------- /End Final Swiper ---------
 
 // ====== Animations =======
 // const animItems = document.querySelectorAll("._anim-items");

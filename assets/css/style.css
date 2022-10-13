@@ -798,7 +798,8 @@ body._lock {
   width: clamp(318px, 97.62vw, 1640px);
 }
 .collection1Top__slider,
-.collection1Top__slider-2 {
+.collection1Top__slider-2,
+.promotionalTop__slider {
   /* background-color: brown; */
   position: relative;
   /* width: 1640px; */
@@ -1181,7 +1182,8 @@ body._lock {
 
 /* ==================== collection1Bottom__slider ======================= */
 .collection1Bottom__slider,
-.collection1Bottom__slider-2 {
+.collection1Bottom__slider-2,
+.promotionalBottom__slider {
   position: relative;
   /* margin: 0 -15px; */
   /* background-color: yellowgreen; */
@@ -1256,7 +1258,8 @@ body._lock {
   color: #c7b7e2;
 }
 .collection1Bottom__slider .slick-arrow,
-.collection1Bottom__slider-2 .slick-arrow {
+.collection1Bottom__slider-2 .slick-arrow,
+.promotionalBottom__slider .slick-arrow {
   /* position: absolute; */
   top: 50%;
   transform: translateY(-50%);
@@ -1266,7 +1269,8 @@ body._lock {
   /* background-color: #6a30e3; */
 }
 .collection1Bottom__slider .slick-arrow:hover,
-.collection1Bottom__slider-2 .slick-arrow:hover {
+.collection1Bottom__slider-2 .slick-arrow:hover,
+.promotionalBottom__slider .slick-arrow:hover {
   background-color: #5818e2;
 }
 .arrow__prev-bottom {
@@ -1368,6 +1372,83 @@ body._lock {
 }
 /* ==================== /End Collection1 Slider ======================= */
 
+/* ====================== PROMOTIONAL ================ */
+.promotional__insideBigAndSmall-wrapper {
+  /* width: 100%; */
+  width: 1440px;
+  /* height: 100%; */
+  height: 562px;
+  background-color: red;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.promotional__smallSlider-container {
+  background-color: pink;
+  width: 425px;
+  height: 562px;
+}
+.promotional__bigSlider-container {
+  background-color: violet;
+  width: 1000px;
+  height: 562px;
+}
+/* ====================== /End PROMOTIONAL ============ */
+
+/* ======================= SWIPER Final ================ */
+/* ------------- Test1 ------------- */
+.insideSwiper__inner {
+  overflow: hidden;
+}
+.swiper-slide {
+  background-size: cover !important;
+  background-position: center !important;
+}
+.gallery-top {
+  height: 470px;
+  width: 70%;
+  margin-left: auto;
+}
+
+.gallery-top .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.gallery-thumbs {
+  height: 470px;
+  width: 25%;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: aqua;
+}
+
+.gallery-thumbs .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+/* ------------- /End Test1 ------------- */
+/* ======================= / End SWIPER Final =========== */
+
 /* ==================== Swiper1 ======================= */
 .swiper1__inner {
   display: none;
@@ -1466,6 +1547,7 @@ body._lock {
 
 /* ==================== Swiper ======================= */
 .swiper__inner {
+  display: none;
   position: relative;
   width: 100%;
   /* width: 1440px; */
@@ -1537,10 +1619,12 @@ body._lock {
 
 .insideSwiper__inner {
   /* width: 80%; */
+  display: none;
   width: 1030px;
   height: 470px;
-  /* background-color: brown; */
+  background-color: brown;
   margin: 0 auto;
+  position: relative;
 }
 .swiper-slide__1 .insideSwiper__inner-img {
   width: 680px;
@@ -1569,10 +1653,11 @@ body._lock {
 /* ==================== /End Swiper ============= */
 
 /* ==================== Creation1 Slider ======================= */
-/* .creation1__slider-inner {
-  display: flex;
-  justify-content: center;
-} */
+.creation1__slider-inner {
+  display: none;
+  /* display: flex; */
+  /* justify-content: center; */
+}
 .creation1__slider {
   position: relative;
   display: block;
@@ -1602,7 +1687,8 @@ body._lock {
 }
 @media (max-width: 967px) {
   .creation1__slider-inner {
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     min-width: 0;
   }
