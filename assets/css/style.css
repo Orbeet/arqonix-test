@@ -1378,20 +1378,29 @@ body._lock {
   width: 1440px;
   /* height: 100%; */
   height: 562px;
-  background-color: red;
+  /* background-color: red; */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 .promotional__smallSlider-container {
-  background-color: pink;
+  /* background-color: pink; */
+  margin: auto;
   width: 425px;
   height: 562px;
 }
 .promotional__bigSlider-container {
-  background-color: violet;
+  /* background-color: violet; */
   width: 1000px;
   height: 562px;
+}
+.promotional__smallSlider .swiper-slide {
+  /*   height: 100%; */
+  opacity: 0.4;
+}
+
+.promotional__smallSlider .swiper-slide-thumb-active {
+  opacity: 1;
 }
 /* ====================== /End PROMOTIONAL ============ */
 

@@ -178,15 +178,19 @@ $(document).ready(function () {
 
   // ------ Promotional Top Small-Slider ------
   let promoSmall = new Swiper(".promotional__smallSlider", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    loop: true,
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    // loop: true,
+    // loopedSlides: 2,
     slidesPerView: 3,
     spaceBetween: 10,
     centeredSlides: true,
     direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
     // thumbs: {
     //   swiper: promoBig,
     // },
@@ -204,12 +208,55 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    loop: true,
+    // loop: true,
+    // loopedSlides: 2,
     slidesPerView: 1,
     spaceBetween: 10,
     // direction: "vertical",
     thumbs: {
       swiper: promoSmall,
+    },
+  });
+
+  // ------ Promotional Top Small-SliderCopy ------
+  let promoSmallCopy = new Swiper(".promotional__smallSliderCopy", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    // loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Promotional Top Small-SliderCopy ------
+
+  // ------ Promotional Top Big-SliderCopy ------
+  let promoBigCopy = new Swiper(".promotional__bigSliderCopy", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // direction: "vertical",
+    thumbs: {
+      swiper: promoSmallCopy,
     },
   });
   // promoBig.on("slideChangeTransitionStart", function () {
