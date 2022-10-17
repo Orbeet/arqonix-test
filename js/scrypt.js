@@ -182,7 +182,7 @@ $(document).ready(function () {
     //   nextEl: ".swiper-button-next",
     //   prevEl: ".swiper-button-prev",
     // },
-    loop: true,
+    // loop: true,
     // loopedSlides: 2,
     slidesPerView: 3,
     spaceBetween: 10,
@@ -211,7 +211,7 @@ $(document).ready(function () {
     loop: true,
     // loopedSlides: 2,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 20,
     // direction: "vertical",
     thumbs: {
       swiper: promoSmall,

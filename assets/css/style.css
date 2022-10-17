@@ -639,10 +639,10 @@ body._lock {
   min-height: 100vh;
 }
 .section__inner {
-  /* background-image: url("../images/bg-1.jpg"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
+  background-image: url("../images/bg-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main__title-inner {
@@ -855,9 +855,6 @@ body._lock {
   .collection1Top__titleAndText {
     width: calc(327px + (1440 - 327) * ((100vw - 375px) / (1680 - 375)));
   }
-}
-
-@media (max-width: 967px) {
 }
 
 /* ==================== /End collection1Top__slider ======================= */
@@ -1367,9 +1364,6 @@ body._lock {
     /* height: calc(11px + (34 - 11) * ((100vw - 375px) / (1680 - 375))); */
   }
 }
-
-@media (max-width: 967px) {
-}
 /* ==================== /End Collection1 Slider ======================= */
 
 /* ====================== PROMOTIONAL ================ */
@@ -1385,14 +1379,40 @@ body._lock {
 }
 .promotional__smallSlider-container {
   /* background-color: pink; */
-  margin: auto;
-  width: 425px;
+  /* margin: auto; */
+  width: 385px;
   height: 562px;
 }
 .promotional__bigSlider-container {
   /* background-color: violet; */
   width: 1000px;
   height: 562px;
+  position: relative;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #6a30e3;
+  /* position: absolute; */
+  /* z-index: 2; */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 47%;
+  color: white;
+  /* transform: translateY(-50%); */
+}
+.swiper-button-prev {
+  left: -40px;
+}
+.swiper-button-next {
+  right: -40px;
+}
+.swiper-slide img {
+  border-radius: clamp(12px, 1.4vw, 20px);
+}
+.promotional__smallSlider .swiper-slide img {
+  width: 385px;
+  height: 180px;
 }
 .promotional__smallSlider .swiper-slide {
   /*   height: 100%; */
@@ -1402,11 +1422,18 @@ body._lock {
 .promotional__smallSlider .swiper-slide-thumb-active {
   opacity: 1;
 }
+
+/* ------------ @media PROMOTIONAL ----------- */
+@media (max-width: 967px) {
+  .promotional__insideBigAndSmall-wrapper {
+    display: none;
+  }
+}
 /* ====================== /End PROMOTIONAL ============ */
 
 /* ======================= SWIPER Final ================ */
 /* ------------- Test1 ------------- */
-.insideSwiper__inner {
+/* .insideSwiper__inner {
   overflow: hidden;
 }
 .swiper-slide {
@@ -1454,7 +1481,7 @@ body._lock {
 
 .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1;
-}
+} */
 /* ------------- /End Test1 ------------- */
 /* ======================= / End SWIPER Final =========== */
 
