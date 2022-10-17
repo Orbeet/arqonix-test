@@ -111,7 +111,7 @@ h1 {
   /* background-image: url("../images/bg-particles.png"); */
   /* background-image: url("../images/Work1.jpg"); */
   /* background-image: url("../images/Work1-min.jpg"); */
-  background-image: url("../images/Work1-min.webp");
+  background-image: url("../images/work-dt.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -121,7 +121,7 @@ h1 {
   .wrapper {
     /* background-image: url("../images/work-mob.jpg"); */
     /* background-image: url("../images/work-mob-min.jpg"); */
-    background-image: url("../images/work-mob-min.webp");
+    background-image: url("../images/work-mob.webp");
   }
 }
 
@@ -639,10 +639,10 @@ body._lock {
   min-height: 100vh;
 }
 .section__inner {
-  background-image: url("../images/bg-1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-image: url("../images/bg-1.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
 }
 
 .main__title-inner {
@@ -650,7 +650,7 @@ body._lock {
   display: flex;
   position: absolute;
   z-index: 3;
-  bottom: 22%;
+  bottom: 4%;
   left: 50%;
   transform: translate(-50%, 0);
   flex-direction: column;
@@ -664,9 +664,10 @@ body._lock {
   font-style: normal;
   font-weight: 400;
   /* font-size: 72px; */
-  font-size: clamp(32px, 4.28vw, 72px);
+  /* font-size: clamp(32px, 4.28vw, 72px); */
+  font-size: clamp(15px, 4.05vw, 68px);
   /* line-height: 87px; */
-  line-height: clamp(39px, 5.18vw, 87px);
+  line-height: clamp(30px, 5.18vw, 87px);
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
@@ -685,7 +686,8 @@ body._lock {
   font-style: normal;
   font-weight: 500;
   /* font-size: 40px; */
-  font-size: clamp(20px, 2.38vw, 40px);
+  /* font-size: clamp(20px, 2.38vw, 40px); */
+  font-size: clamp(13px, 1.9vw, 32px);
   /* line-height: 33px; */
   line-height: clamp(19px, 1.96vw, 33px);
   color: #ffffff;

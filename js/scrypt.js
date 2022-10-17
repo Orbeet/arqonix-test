@@ -182,7 +182,7 @@ $(document).ready(function () {
     //   nextEl: ".swiper-button-next",
     //   prevEl: ".swiper-button-prev",
     // },
-    // loop: true,
+    loop: true,
     // loopedSlides: 2,
     slidesPerView: 3,
     spaceBetween: 10,
