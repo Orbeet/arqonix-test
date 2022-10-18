@@ -760,7 +760,7 @@ body._lock {
   text-transform: uppercase;
   color: #ffffff;
   /* background-color: gold; */
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
   /* position: relative; */
   /* z-index: 2; */
@@ -1372,8 +1372,10 @@ body._lock {
 .promotional__insideBigAndSmall-wrapper {
   /* width: 100%; */
   width: 1440px;
+  width: clamp(499px, 85.7vw, 1440px);
   /* height: 100%; */
   height: 562px;
+  height: clamp(10px, 33.45vw, 562px);
   /* background-color: red; */
   margin: 0 auto;
   display: flex;
@@ -1383,17 +1385,22 @@ body._lock {
   /* background-color: pink; */
   /* margin: auto; */
   width: 385px;
+  width: clamp(10px, 22.9vw, 385px);
   height: 562px;
+  height: clamp(10px, 33.45vw, 562px);
 }
 .promotional__bigSlider-container {
   /* background-color: violet; */
   width: 1000px;
+  width: clamp(10px, 59.5vw, 1000px);
   height: 562px;
+  height: clamp(10px, 33.45vw, 562px);
   position: relative;
 }
 .swiper-button-next,
 .swiper-button-prev {
   background-color: #6a30e3;
+  transition: all 0.3s ease 0s;
   /* position: absolute; */
   /* z-index: 2; */
   width: 80px;
@@ -1403,18 +1410,54 @@ body._lock {
   color: white;
   /* transform: translateY(-50%); */
 }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #5818e2;
+}
 .swiper-button-prev {
   left: -40px;
 }
 .swiper-button-next {
   right: -40px;
 }
+
+.swiper-button-svg-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* width: 11px; */
+  width: 22px;
+  /* height: 17px; */
+  height: 34px;
+  margin: 0 auto;
+  background: url(../images/arrow-next.svg) center center no-repeat;
+  background-size: cover;
+}
+.swiper-button-svg-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* width: 11px; */
+  width: 22px;
+  /* height: 17px; */
+  height: 34px;
+  margin: 0 auto;
+  background: url(../images/arrow-prev.svg) center center no-repeat;
+  background-size: cover;
+}
+
 .swiper-slide img {
   border-radius: clamp(12px, 1.4vw, 20px);
 }
 .promotional__smallSlider .swiper-slide img {
   width: 385px;
+  width: clamp(10px, 22.9vw, 385px);
   height: 180px;
+  height: clamp(10px, 10.7vw, 180px);
 }
 .promotional__smallSlider .swiper-slide {
   /*   height: 100%; */
@@ -1426,9 +1469,47 @@ body._lock {
 }
 
 /* ------------ @media PROMOTIONAL ----------- */
+@media (max-width: 1680px) {
+  .swiper-button-prev {
+    left: calc(-10px + (-40 - -10) * ((100vw - 375px) / (1680 - 375)));
+    width: calc(20px + (80 - 20) * ((100vw - 375px) / (1680 - 375)));
+    height: calc(20px + (80 - 20) * ((100vw - 375px) / (1680 - 375)));
+  }
+  .swiper-button-next {
+    right: calc(-10px + (-40 - -10) * ((100vw - 375px) / (1680 - 375)));
+    width: calc(20px + (80 - 20) * ((100vw - 375px) / (1680 - 375)));
+    height: calc(20px + (80 - 20) * ((100vw - 375px) / (1680 - 375)));
+  }
+  .swiper-button-svg-prev {
+    width: calc(4px + (22 - 4) * ((100vw - 375px) / (1680 - 375)));
+    height: calc(11px + (34 - 11) * ((100vw - 375px) / (1680 - 375)));
+  }
+  .swiper-button-svg-next {
+    width: calc(4px + (22 - 4) * ((100vw - 375px) / (1680 - 375)));
+    height: calc(11px + (34 - 11) * ((100vw - 375px) / (1680 - 375)));
+  }
+}
 @media (max-width: 967px) {
   .promotional__insideBigAndSmall-wrapper {
     display: none;
+  }
+  .swiper-button-prev {
+    left: calc(-18px + (-38 - -18) * ((100vw - 375px) / (967 - 375)));
+    width: clamp(40px, 8.27vw, 80px);
+    height: clamp(40px, 8.27vw, 80px);
+  }
+  .swiper-button-next {
+    right: calc(-18px + (-38 - -18) * ((100vw - 375px) / (967 - 375)));
+    width: clamp(40px, 8.27vw, 80px);
+    height: clamp(40px, 8.27vw, 80px);
+  }
+  .swiper-button-svg-prev {
+    width: clamp(11px, 2.22vw, 21.5px);
+    height: clamp(17px, 3.29vw, 31.8px);
+  }
+  .swiper-button-svg-next {
+    width: clamp(11px, 2.22vw, 21.5px);
+    height: clamp(17px, 3.29vw, 31.8px);
   }
 }
 /* ====================== /End PROMOTIONAL ============ */
