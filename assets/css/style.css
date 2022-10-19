@@ -755,12 +755,12 @@ body._lock {
   font-weight: 400;
   font-size: 52px;
   /* line-height: 63px; */
-  line-height: 80px;
+  line-height: 100px;
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  /* background-color: gold; */
+  background-color: darkseagreen;
   padding-top: 80px;
   padding-bottom: 40px;
   /* position: relative; */
