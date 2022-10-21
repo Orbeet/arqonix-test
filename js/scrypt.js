@@ -313,17 +313,18 @@ $(document).ready(function () {
   // ---------- /End Slide3 ---------
 
   // --------------- COPY ----------------------------------------
-  // --- Promotional Top Small-SliderCopy ---
-  let promoSmallCopy = new Swiper(".promotional__smallSliderCopy", {
+  // ---------- Slide1 COPY ---------
+  // ------ Promotional Top SmallSlider-Slide1 COPY ------
+  let promoSmallCOPY = new Swiper(".promotional__smallSlider-slide1COPY", {
     // navigation: {
     //   nextEl: ".swiper-button-next",
     //   prevEl: ".swiper-button-prev",
     // },
-    // loop: true,
+    loop: true,
     // loopedSlides: 2,
     slidesPerView: 3,
     spaceBetween: 10,
-    centeredSlides: true,
+    // centeredSlides: true,
     direction: "vertical",
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
@@ -337,24 +338,116 @@ $(document).ready(function () {
     //   },
     // },
   });
-  // --- /End Promotional Top Small-SliderCopy ---
+  // ------ /End Promotional Top SmallSlider-Slide1 COPY ------
 
-  // --- Promotional Top Big-SliderCopy ---
-  let promoBigCopy = new Swiper(".promotional__bigSliderCopy", {
+  // ------ Promotional Top BigSlider-Slide1 COPY ------
+  let promoBigCOPY = new Swiper(".promotional__bigSlider-slide1COPY", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    // loop: true,
+    loop: true,
     // loopedSlides: 2,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 20,
     // direction: "vertical",
     thumbs: {
-      swiper: promoSmallCopy,
+      swiper: promoSmallCOPY,
     },
   });
-  // --- /End Promotional Top Big-SliderCopy ---
+  // ------ /End Promotional Top BigSlider-Slide1 COPY ------
+  // ---------- /End Slide1 COPY ---------
+
+  // ---------- Slide2 COPY ---------
+  // ------ Promotional Top SmallSlider-Slide2 COPY ------
+  let promoSmall2COPY = new Swiper(".promotional__smallSlider-slide2COPY", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Promotional Top SmallSlider-Slide2 COPY ------
+
+  // ------ Promotional Top BigSlider-Slide2 COPY ------
+  let promoBig2COPY = new Swiper(".promotional__bigSlider-slide2COPY", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    cssMode: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: promoSmall2COPY,
+    },
+  });
+  // ------ /End Promotional Top BigSlider-Slide2 COPY ------
+  // ---------- /End Slide2 COPY ---------
+
+  // ---------- Slide3 COPY ---------
+  // ------ Promotional Top SmallSlider-Slide3 COPY ------
+  let promoSmall3COPY = new Swiper(".promotional__smallSlider-slide3COPY", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Promotional Top SmallSlider-Slide3 COPY ------
+
+  // ------ Promotional Top BigSlider-Slide3 COPY ------
+  let promoBig3COPY = new Swiper(".promotional__bigSlider-slide3COPY", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: promoSmall3COPY,
+    },
+  });
+  // ------ /End Promotional Top BigSlider-Slide3 COPY ------
+  // ---------- /End Slide3 COPY ---------
 
   // promoBig.on("slideChangeTransitionStart", function () {
   //   promoSmall.slideTo(promoBig.activeIndex);
