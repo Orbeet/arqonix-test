@@ -115,7 +115,7 @@ if (menuLinks.length > 0) {
 }
 // -------------------------------------------------------
 
-// --------------- Partners and Team Sliders ----------------
+// --------------- Partners and Team and PROMOTIONAL Sliders ----------------
 $(document).ready(function () {
   $(".partners__slider").slick({
     adaptiveHeight: true,
@@ -176,8 +176,9 @@ $(document).ready(function () {
   });
   // ------ /End Promotional Bottom Slider ------
 
-  // ------ Promotional Top Small-Slider ------
-  let promoSmall = new Swiper(".promotional__smallSlider", {
+  // ---------- Slide1 ---------
+  // ------ Promotional Top SmallSlider-Slide1 ------
+  let promoSmall = new Swiper(".promotional__smallSlider-slide1", {
     // navigation: {
     //   nextEl: ".swiper-button-next",
     //   prevEl: ".swiper-button-prev",
@@ -200,10 +201,10 @@ $(document).ready(function () {
     //   },
     // },
   });
-  // ------ /End Promotional Top Small-Slider ------
+  // ------ /End Promotional Top SmallSlider-Slide1 ------
 
-  // ------ Promotional Top Big-Slider ------
-  let promoBig = new Swiper(".promotional__bigSlider", {
+  // ------ Promotional Top BigSlider-Slide1 ------
+  let promoBig = new Swiper(".promotional__bigSlider-slide1", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -217,8 +218,102 @@ $(document).ready(function () {
       swiper: promoSmall,
     },
   });
+  // ------ /End Promotional Top BigSlider-Slide1 ------
+  // ---------- /End Slide1 ---------
 
-  // ------ Promotional Top Small-SliderCopy ------
+  // ---------- Slide2 ---------
+  // ------ Promotional Top SmallSlider-Slide2 ------
+  let promoSmall2 = new Swiper(".promotional__smallSlider-slide2", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Promotional Top SmallSlider-Slide2 ------
+
+  // ------ Promotional Top BigSlider-Slide2 ------
+  let promoBig2 = new Swiper(".promotional__bigSlider-slide2", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    cssMode: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: promoSmall2,
+    },
+  });
+  // ------ /End Promotional Top BigSlider-Slide2 ------
+  // ---------- /End Slide2 ---------
+
+  // ---------- Slide3 ---------
+  // ------ Promotional Top SmallSlider-Slide3 ------
+  let promoSmall3 = new Swiper(".promotional__smallSlider-slide3", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Promotional Top SmallSlider-Slide3 ------
+
+  // ------ Promotional Top BigSlider-Slide3 ------
+  let promoBig3 = new Swiper(".promotional__bigSlider-slide3", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: promoSmall3,
+    },
+  });
+  // ------ /End Promotional Top BigSlider-Slide3 ------
+  // ---------- /End Slide3 ---------
+
+  // --------------- COPY ----------------------------------------
+  // --- Promotional Top Small-SliderCopy ---
   let promoSmallCopy = new Swiper(".promotional__smallSliderCopy", {
     // navigation: {
     //   nextEl: ".swiper-button-next",
@@ -242,9 +337,9 @@ $(document).ready(function () {
     //   },
     // },
   });
-  // ------ /End Promotional Top Small-SliderCopy ------
+  // --- /End Promotional Top Small-SliderCopy ---
 
-  // ------ Promotional Top Big-SliderCopy ------
+  // --- Promotional Top Big-SliderCopy ---
   let promoBigCopy = new Swiper(".promotional__bigSliderCopy", {
     navigation: {
       nextEl: ".swiper-button-next",
@@ -259,6 +354,8 @@ $(document).ready(function () {
       swiper: promoSmallCopy,
     },
   });
+  // --- /End Promotional Top Big-SliderCopy ---
+
   // promoBig.on("slideChangeTransitionStart", function () {
   //   promoSmall.slideTo(promoBig.activeIndex);
   // });
