@@ -929,7 +929,8 @@ body._lock {
   /* width: 953px; */
   /* height: 434px; */
 }
-.videoDt-1 {
+.videoDt-1,
+.videoMob {
   border-radius: clamp(12px, 1.4vw, 20px);
   position: relative;
   width: 100%;
