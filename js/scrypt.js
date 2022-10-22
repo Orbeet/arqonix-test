@@ -458,6 +458,312 @@ $(document).ready(function () {
   // ------ /End Promotional Top Big-Slider ------
   // ------------ /End PROMOTIONAL sliders ------------
 
+  // ------------ SANDBOX sliders ------------
+  // ------- Sandbox Top Slider ---------
+  $(".sandboxTop__slider").slick({
+    asNavFor: ".sandboxBottom__slider",
+    slidesToShow: 1,
+    fade: true,
+    draggable: false,
+    swipe: false,
+    arrows: false,
+  });
+  // ------ /End Sandbox Top Slider ------
+
+  // ------ Sandbox Bottom Slider ------
+  $(".sandboxBottom__slider").slick({
+    centerMode: true,
+    variableWidth: true,
+    asNavFor: ".sandboxTop__slider",
+    prevArrow:
+      "<div class='arrow__prev-bottom'><div class='arrow__prev-svg-bottom'></div></div>",
+    nextArrow:
+      "<div class='arrow__next-bottom'><div class='arrow__next-svg-bottom'></div></div>",
+  });
+  // ------ /End Sandbox Bottom Slider ------
+
+  // ---------- Slide1 ---------
+  // ------ Sandbox Top SmallSlider-Slide1 ------
+  let sandboxSmall = new Swiper(".sandbox__smallSlider-slide1", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Sandbox Top SmallSlider-Slide1 ------
+
+  // ------ Sandbox Top BigSlider-Slide1 ------
+  let sandboxBig = new Swiper(".sandbox__bigSlider-slide1", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: sandboxSmall,
+    },
+  });
+  // ------ /End Sandbox Top BigSlider-Slide1 ------
+  // ---------- /End Slide1 ---------
+
+  // ---------- Slide2 ---------
+  // ------ Sandbox Top SmallSlider-Slide2 ------
+  let sandboxSmall2 = new Swiper(".sandbox__smallSlider-slide2", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Sandbox Top SmallSlider-Slide2 ------
+
+  // ------ Sandbox Top BigSlider-Slide2 ------
+  let sandboxBig2 = new Swiper(".sandbox__bigSlider-slide2", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    cssMode: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: sandboxSmall2,
+    },
+  });
+  // ------ /End Sandbox Top BigSlider-Slide2 ------
+  // ---------- /End Slide2 ---------
+
+  // ---------- Slide3 ---------
+  // ------ Sandbox Top SmallSlider-Slide3 ------
+  let sandboxSmall3 = new Swiper(".sandbox__smallSlider-slide3", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Sandbox Top SmallSlider-Slide3 ------
+
+  // ------ Sandbox Top BigSlider-Slide3 ------
+  let sandboxBig3 = new Swiper(".sandbox__bigSlider-slide3", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: sandboxSmall3,
+    },
+  });
+  // ------ /End Sandbox Top BigSlider-Slide3 ------
+  // ---------- /End Slide3 ---------
+
+  // --------------- COPY ----------------------------------------
+  // ---------- Slide1 COPY ---------
+  // ------ Sandbox Top SmallSlider-Slide1 COPY ------
+  let sandboxSmallCOPY = new Swiper(".sandbox__smallSlider-slide1COPY", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Sandbox Top SmallSlider-Slide1 COPY ------
+
+  // ------ Sandbox Top BigSlider-Slide1 COPY ------
+  let sandboxBigCOPY = new Swiper(".sandbox__bigSlider-slide1COPY", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: sandboxSmallCOPY,
+    },
+  });
+  // ------ /End Sandbox Top BigSlider-Slide1 COPY ------
+  // ---------- /End Slide1 COPY ---------
+
+  // ---------- Slide2 COPY ---------
+  // ------ Sandbox Top SmallSlider-Slide2 COPY ------
+  let sandboxSmall2COPY = new Swiper(".sandbox__smallSlider-slide2COPY", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Sandbox Top SmallSlider-Slide2 COPY ------
+
+  // ------ Sandbox Top BigSlider-Slide2 COPY ------
+  let sandboxBig2COPY = new Swiper(".sandbox__bigSlider-slide2COPY", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    cssMode: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: sandboxSmall2COPY,
+    },
+  });
+  // ------ /End Sandbox Top BigSlider-Slide2 COPY ------
+  // ---------- /End Slide2 COPY ---------
+
+  // ---------- Slide3 COPY ---------
+  // ------ Sandbox Top SmallSlider-Slide3 COPY ------
+  let sandboxSmall3COPY = new Swiper(".sandbox__smallSlider-slide3COPY", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    direction: "vertical",
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    // freeMode: true,
+    // thumbs: {
+    //   swiper: promoBig,
+    // },
+    // thumbs: {
+    //   swiper: {
+    //     el: ".promotional__bigSlider",
+    //   },
+    // },
+  });
+  // ------ /End Sandbox Top SmallSlider-Slide3 COPY ------
+
+  // ------ Sandbox Top BigSlider-Slide3 COPY ------
+  let sandboxBig3COPY = new Swiper(".sandbox__bigSlider-slide3COPY", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    // loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // direction: "vertical",
+    thumbs: {
+      swiper: sandboxSmall3COPY,
+    },
+  });
+  // ------ /End Sandbox Top BigSlider-Slide3 COPY ------
+  // ---------- /End Slide3 COPY ---------
+
+  // sandboxBig.on("slideChangeTransitionStart", function () {
+  //   sandboxSmall.slideTo(sandboxBig.activeIndex);
+  // });
+  // sandboxSmall.on("transitionStart", function () {
+  //   sandboxBig.slideTo(sandboxSmall.activeIndex);
+  // });
+  // ------ /End Sandbox Top Big-Slider ------
+  // ------------ /End SANDBOX sliders ------------
+
   // ---------- collection1Top__slider1 -----------
   $(".collection1Top__slider").slick({
     asNavFor: ".collection1Bottom__slider",

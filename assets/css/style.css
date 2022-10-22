@@ -810,6 +810,7 @@ body._lock {
 }
 .collection1Top__slider,
 .collection1Top__slider-2,
+.sandboxTop__slider,
 .promotionalTop__slider {
   /* background-color: brown; */
   position: relative;
@@ -1194,6 +1195,7 @@ body._lock {
 /* ==================== collection1Bottom__slider ======================= */
 .collection1Bottom__slider,
 .collection1Bottom__slider-2,
+.sandboxBottom__slider,
 .promotionalBottom__slider {
   position: relative;
   /* margin: 0 -15px; */
@@ -1270,6 +1272,7 @@ body._lock {
 }
 .collection1Bottom__slider .slick-arrow,
 .collection1Bottom__slider-2 .slick-arrow,
+.sandboxBottom__slider .slick-arrow,
 .promotionalBottom__slider .slick-arrow {
   /* position: absolute; */
   top: 50%;
@@ -1281,6 +1284,7 @@ body._lock {
 }
 .collection1Bottom__slider .slick-arrow:hover,
 .collection1Bottom__slider-2 .slick-arrow:hover,
+.sandboxBottom__slider .slick-arrow:hover,
 .promotionalBottom__slider .slick-arrow:hover {
   background-color: #5818e2;
 }
@@ -1633,7 +1637,7 @@ body._lock {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -1932,8 +1936,9 @@ body._lock {
 
 .creation2__slider {
   position: relative;
-  /* display: none; */
-  display: block;
+  display: none;
+  /* display: block; */
+  background-color: red;
   /* min-width: 0; */
   /* width: 100%; */
   /* padding: 0 15px; */
