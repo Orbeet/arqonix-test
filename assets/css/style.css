@@ -844,7 +844,7 @@ body._lock {
   font-style: normal;
   font-weight: 400;
   /* font-size: 40px; */
-  font-size: clamp(24px, 2.8vw, 40px);
+  font-size: clamp(24px, 2.7vw, 39px);
   line-height: 110%;
   letter-spacing: 0.01em;
   color: #ffffff;
@@ -1346,6 +1346,16 @@ body._lock {
 /* .slick-arrow.slick-disabled {
   opacity: 0.2;
 } */
+
+.dn {
+  display: none;
+}
+.bgcTransp {
+  background-color: transparent;
+}
+.bgcTransp picture {
+  display: none;
+}
 
 /* ==================== @media collection1Bottom__slider ======================= */
 @media (max-width: 1680px) {
