@@ -2322,7 +2322,8 @@ body._lock {
   height: 100%;
   border-radius: 16px;
   cursor: pointer;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 .partners__card {
   margin-right: 32px;
@@ -2549,7 +2550,8 @@ body._lock {
   width: 100%;
   height: 100%;
   border-radius: 16px;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 .popup__titleAndLink {
   /* background-color: rgb(92, 92, 28); */
@@ -2842,7 +2844,8 @@ body._lock {
   width: 224px;
   height: 157px;
   border-radius: 16px;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 /* ================= /End Partners Slider =============== */
 /* ==================== /End Partners ======================= */
