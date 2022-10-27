@@ -2939,7 +2939,7 @@ body._lock {
     margin-bottom: calc(24px + (32 - 24) * ((100vw - 375px) / (1680 - 375)));
   }
   .about__description-title {
-    font-size: calc(24px + (40 - 24) * ((100vw - 375px) / (1680 - 375)));
+    font-size: calc(21px + (40 - 21) * ((100vw - 375px) / (1680 - 375)));
     margin-bottom: calc(4px + (12 - 4) * ((100vw - 375px) / (1680 - 375)));
   }
   .about__description-text {
@@ -3032,7 +3032,7 @@ body._lock {
   /* width: 100%; */
   /* height: 100%; */
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/team-Vika-NoBG.webp") no-repeat;
+  background: url("../images/team-Brian-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-2 {
@@ -3040,147 +3040,147 @@ body._lock {
   /* width: 50%; */
   /* height: 100%; */
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/team-Arqonix-Vika-NoBG.webp") no-repeat;
+  background: url("../images/team-Arqonix-Pasha-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-3 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/team-Brian-NoBG.webp") no-repeat;
+  background: url("../images/team-Pasha-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-4 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/team-Arqonix-Pasha-NoBG.webp") no-repeat;
+  background: url("../images/team-Arqonix-Brian-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-5 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Vika-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-6 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Vika-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-7 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Vlad-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-8 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Vlad-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-9 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Sasha-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-10 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Sasha-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-11 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Danya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-12 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Danya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-13 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Zhenya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-14 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Zhenya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-15 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Kolya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-16 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Kolya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-17 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Taras-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-18 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Taras-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-19 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-oleg_avatar-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-20 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Oleg-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-21 {
   /* background: url("../images/test-small2-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small2-1@1x.webp") no-repeat;
+  background: url("../images/team-Nastya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-22 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Nastya-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-23 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-marina_avatar-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-24 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Marina NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-25 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Ruslan-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-26 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Ruslan-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-27 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-svyat_avatar-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-28 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Sviat-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-29 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Yura-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .img-30 {
   /* background: url("../images/test-small0-1@1x.jpg") no-repeat; */
-  background: url("../images/test-small0-1@1x.webp") no-repeat;
+  background: url("../images/team-Arqonix-Yura-NoBG.webp") no-repeat;
   background-size: cover;
 }
 .slider1,
