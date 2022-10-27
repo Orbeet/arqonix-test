@@ -960,6 +960,46 @@ slider11.oninput = () => {
   img22.style.width = slider11Val + "%";
 };
 
+// ========================= Before After12 ==================
+const slider12 = document.querySelector(".slider12 input");
+const img24 = document.querySelector(".images .img-24");
+const dragLine12 = document.querySelector(".slider12 .drag-line");
+slider12.oninput = () => {
+  let slider12Val = slider12.value;
+  dragLine12.style.left = slider12Val + "%";
+  img24.style.width = slider12Val + "%";
+};
+
+// ========================= Before After13 ==================
+const slider13 = document.querySelector(".slider13 input");
+const img26 = document.querySelector(".images .img-26");
+const dragLine13 = document.querySelector(".slider13 .drag-line");
+slider13.oninput = () => {
+  let slider13Val = slider13.value;
+  dragLine13.style.left = slider13Val + "%";
+  img26.style.width = slider13Val + "%";
+};
+
+// ========================= Before After14 ==================
+const slider14 = document.querySelector(".slider14 input");
+const img28 = document.querySelector(".images .img-28");
+const dragLine14 = document.querySelector(".slider14 .drag-line");
+slider14.oninput = () => {
+  let slider14Val = slider14.value;
+  dragLine14.style.left = slider14Val + "%";
+  img28.style.width = slider14Val + "%";
+};
+
+// ========================= Before After15 ==================
+const slider15 = document.querySelector(".slider15 input");
+const img30 = document.querySelector(".images .img-30");
+const dragLine15 = document.querySelector(".slider15 .drag-line");
+slider15.oninput = () => {
+  let slider15Val = slider15.value;
+  dragLine15.style.left = slider15Val + "%";
+  img30.style.width = slider15Val + "%";
+};
+
 // ========================= Before After TEST DT Only ==================
 $(".code-wrapper").on("mousemove", function (e) {
   var offsets = $(this).offset();
