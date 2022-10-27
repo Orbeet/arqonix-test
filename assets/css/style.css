@@ -2974,7 +2974,7 @@ body._lock {
 /* ------------- Before After --------------- */
 .card__img {
   border-radius: 16px;
-  background-color: red;
+  /* background-color: red; */
   /* background-image: url("../images/test-Ava.jpg"); */
   /* background-position: center; */
   /* background-repeat: no-repeat; */
