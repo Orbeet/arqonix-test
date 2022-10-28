@@ -1002,9 +1002,9 @@ slider15.oninput = () => {
 
 // ========================= Before After TEST DT Only ==================
 $(".code-wrapper").on("mousemove", function (e) {
-  var offsets = $(this).offset();
-  var fullWidth = $(this).width();
-  var mouseX = e.pageX - offsets.left;
+  let offsets = $(this).offset();
+  let fullWidth = $(this).width();
+  let mouseX = e.pageX - offsets.left;
 
   if (mouseX < 0) {
     mouseX = 0;
@@ -1039,6 +1039,94 @@ $(".divider-wrapper").on("mouseleave", function () {
     transition: "all .3s",
   });
   $(this).find(".design-image").css({
+    transform: "translateX(-50%)",
+    transition: "all .3s",
+  });
+});
+
+// ---- 1 Before After DT Only --------
+$(".code-wrapper1").on("mousemove", function (e) {
+  let offsets = $(this).offset();
+  let fullWidth = $(this).width();
+  let mouseX = e.pageX - offsets.left;
+
+  if (mouseX < 0) {
+    mouseX = 0;
+  } else if (mouseX > fullWidth) {
+    mouseX = fullWidth;
+  }
+
+  $(this).parent().find(".divider-bar1").css({
+    left: mouseX,
+    transition: "none",
+  });
+  $(this)
+    .find(".design-wrapper1")
+    .css({
+      transform: "translateX(" + mouseX + "px)",
+      transition: "none",
+    });
+  $(this)
+    .find(".design-image1")
+    .css({
+      transform: "translateX(" + -1 * mouseX + "px)",
+      transition: "none",
+    });
+});
+$(".divider-wrapper1").on("mouseleave", function () {
+  $(this).parent().find(".divider-bar1").css({
+    left: "50%",
+    transition: "all .3s",
+  });
+  $(this).find(".design-wrapper1").css({
+    transform: "translateX(50%)",
+    transition: "all .3s",
+  });
+  $(this).find(".design-image1").css({
+    transform: "translateX(-50%)",
+    transition: "all .3s",
+  });
+});
+
+// ---- 2 Before After DT Only --------
+$(".code-wrapper2").on("mousemove", function (e) {
+  let offsets = $(this).offset();
+  let fullWidth = $(this).width();
+  let mouseX = e.pageX - offsets.left;
+
+  if (mouseX < 0) {
+    mouseX = 0;
+  } else if (mouseX > fullWidth) {
+    mouseX = fullWidth;
+  }
+
+  $(this).parent().find(".divider-bar2").css({
+    left: mouseX,
+    transition: "none",
+  });
+  $(this)
+    .find(".design-wrapper2")
+    .css({
+      transform: "translateX(" + mouseX + "px)",
+      transition: "none",
+    });
+  $(this)
+    .find(".design-image2")
+    .css({
+      transform: "translateX(" + -1 * mouseX + "px)",
+      transition: "none",
+    });
+});
+$(".divider-wrapper2").on("mouseleave", function () {
+  $(this).parent().find(".divider-bar2").css({
+    left: "50%",
+    transition: "all .3s",
+  });
+  $(this).find(".design-wrapper2").css({
+    transform: "translateX(50%)",
+    transition: "all .3s",
+  });
+  $(this).find(".design-image2").css({
     transform: "translateX(-50%)",
     transition: "all .3s",
   });
