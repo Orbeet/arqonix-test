@@ -108,9 +108,6 @@ h1 {
 }
 
 /* --------- PRELOADER -------- */
-.spinner {
-  display: none;
-}
 .container-preloader {
   align-items: center;
   cursor: none;
@@ -127,16 +124,7 @@ h1 {
   position: absolute;
   z-index: 100;
 }
-/* Spinner Loading */
-.container-preloader .animation-preloader .spinner {
-  animation: spinner 1s infinite linear;
-  border-radius: 50%;
-  border: 10px solid rgba(0, 0, 0, 0.2);
-  border-top-color: #5818e2; /* It is not in alphabetical order so that you do not overwrite it */
-  height: 9em;
-  margin: 0 auto 3.5em auto;
-  width: 9em;
-}
+
 /* Loading text */
 .container-preloader .animation-preloader .txt-loading {
   font: bold 5em "Montserrat", sans-serif;
@@ -220,12 +208,7 @@ h1 {
   transform: translateX(101%);
   transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
 }
-/* Animation of the preloader */
-@keyframes spinner {
-  to {
-    transform: rotateZ(360deg);
-  }
-}
+
 /* Animation of letters loading from the preloader */
 @keyframes characters {
   0%,
@@ -242,12 +225,6 @@ h1 {
 }
 /* Laptop size back (laptop, tablet, cell phone) */
 @media screen and (max-width: 767px) {
-  /* Preloader */
-  /* Spinner Loading */
-  .container-preloader .animation-preloader .spinner {
-    height: 8em;
-    width: 8em;
-  }
   /* Text Loading */
   .container-preloader .animation-preloader .txt-loading {
     font: bold 3.5em "Montserrat", sans-serif;
@@ -255,11 +232,7 @@ h1 {
 }
 @media screen and (max-width: 500px) {
   /* Prelaoder */
-  /* Spinner Loading */
-  .container-preloader .animation-preloader .spinner {
-    height: 7em;
-    width: 7em;
-  }
+
   /*Loading text */
   .container-preloader .animation-preloader .txt-loading {
     font: bold 2em "Montserrat", sans-serif;
@@ -332,15 +305,6 @@ h1 {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #loader {
-    /* display: none; */
-  }
-  .spinner {
-    /* display: block; */
   }
 }
 /* --------- /End PRELOADER -------- */
