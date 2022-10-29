@@ -1,5 +1,20 @@
 "use strict";
 
+// -------- PREALODER ----------
+$(document).ready(function () {
+  setTimeout(function () {
+    $("#container").addClass("loaded");
+    if ($("#container").hasClass("loaded")) {
+      $("#preloader")
+        .delay(1000)
+        .queue(function () {
+          $(this).remove();
+        });
+    }
+  }, 1000);
+});
+// -------- /End PREALODER -------
+
 const isMobile = {
   Android: function () {
     return navigator.userAgent.match(/Android/i);
