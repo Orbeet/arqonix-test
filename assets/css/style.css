@@ -133,7 +133,7 @@ h1 {
 }
 .container-preloader .animation-preloader .txt-loading .characters:before {
   animation: characters 4s infinite;
-  color: #5818e2;
+  color: #d203f6b0;
   content: attr(preloader-text);
   left: 0;
   opacity: 0;
